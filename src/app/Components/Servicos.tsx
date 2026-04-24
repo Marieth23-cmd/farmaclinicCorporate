@@ -54,7 +54,7 @@ export default function Servicos() {
         </div>
 
         {/* Lado direito */}
-        <div className="relative w-full md:h-[600px] lg:h-[200px] min-h-[350px]">
+        <div className="relative w-full md:h-[400px] lg:h-[500px] min-h-[350px]">
           <Image
             src="https://res.cloudinary.com/dhpa1juyr/image/upload/v1776782372/Img_logo_ykulq6.png"
             alt="Saúde ocupacional"

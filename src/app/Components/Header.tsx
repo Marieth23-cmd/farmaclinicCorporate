@@ -42,7 +42,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 w-full h-20 bg-white shadow-sm z-50">
-      <div className="max-w-7xl mx-auto h-full px-5 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto h-full px-5 flex items-center justify-between">
 
         {/* Logo */}
         <div className="flex items-center justify-between w-full lg:w-auto">
@@ -78,6 +78,10 @@ export default function Header() {
       <button className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full font-medium shadow-lg">
         Solicitar Proposta
         </button>
+         <FaYoutube className="cursor-pointer hover:text-red-600" />
+              <FaInstagram className="cursor-pointer hover:text-pink-500" />
+              <GrFacebookOption className="cursor-pointer hover:text-blue-600" />
+              <FaLinkedinIn className="cursor-pointer hover:text-blue-700" />
 
         
         </div>

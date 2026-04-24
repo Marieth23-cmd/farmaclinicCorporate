@@ -30,9 +30,7 @@ export default function Hero() {
     Solicitar Proposta
   </button>
 
-  <button className="border border-white text-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition">
-    Conhecer Serviços
-  </button>
+ 
 </div>
     </div>
   </div>

@@ -9,7 +9,7 @@ export default function Solucao() {
         alt="solução"
         width={1600}
         height={700}
-        className="w-full h-[500px] object-cover"
+        className="w-full object-cover"
       />
 
       {/* Overlay */}

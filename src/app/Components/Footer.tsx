@@ -1,96 +1,97 @@
 import Image from "next/image";
-import {
-  FaInstagram,
-  FaWhatsapp,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { GrFacebookOption } from "react-icons/gr";
 import { FaLinkedinIn, FaLocationDot } from "react-icons/fa6";
 import { MdAlternateEmail } from "react-icons/md";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#011b35d8] text-white">
-      <div className="max-w-6xl mx-auto px-4 py-12">
+    <footer className="bg-[#022241d8] text-white">
+      <div className="max-w-6xl mx-auto px-4">
 
-        <div className="grid grid-cols-1 min:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 py-10 lg:py-14 items-start">
 
-          {/* Coluna 1 */}
+          {/* Logo */}
           <div className="space-y-5">
             <Image
               src="https://res.cloudinary.com/dhpa1juyr/image/upload/v1776868935/Logo_branco_cd3dhn.png"
               alt="Logo"
               width={220}
               height={140}
+              className="object-contain"
             />
 
-            <p className="text-sm lg:text-base text-gray-200 leading-relaxed">
-              Soluções completas em medicina do trabalho,
-              garantindo saúde, segurança e conformidade legal
-              para a sua empresa.
-            </p>
-
-            <div className="flex gap-3 text-lg">
-              <span className="p-2 rounded-full bg-white/10 hover:bg-red-600 transition cursor-pointer">
-                <FaYoutube />
-              </span>
-
-              <span className="p-2 rounded-full bg-white/10 hover:bg-pink-500 transition cursor-pointer">
-                <FaInstagram />
-              </span>
-
-              <span className="p-2 rounded-full bg-white/10 hover:bg-blue-600 transition cursor-pointer">
-                <GrFacebookOption />
-              </span>
-
-              <span className="p-2 rounded-full bg-white/10 hover:bg-blue-700 transition cursor-pointer">
-                <FaLinkedinIn />
-              </span>
+            <div className="flex gap-3 text-white text-lg">
+              <FaYoutube className="cursor-pointer hover:text-red-500 transition" />
+              <FaInstagram className="cursor-pointer hover:text-pink-500 transition" />
+              <GrFacebookOption className="cursor-pointer hover:text-blue-500 transition" />
+              <FaLinkedinIn className="cursor-pointer hover:text-blue-400 transition" />
             </div>
           </div>
 
-          {/* Coluna 2 */}
+          {/* Contactos */}
           <div>
-            <h3 className="font-semibold text-lg mb-5">Contacto</h3>
+            <h3 className="font-bold text-lg mb-4">Contacto</h3>
 
-            <ul className="space-y-4 text-gray-200 text-sm lg:text-base">
-              <li className="flex items-start gap-3">
-                <FaLocationDot className="mt-1 text-[#4fb4ff]" />
+            <ul className="space-y-4 text-sm lg:text-base">
+              <li className="flex items-start gap-2">
+                <FaLocationDot
+                  className="p-1 bg-[#0a68a7d8] rounded-full shrink-0"
+                  size={24}
+                />
                 <span>
                   Rua 11 de Novembro, Casa S/N <br />
                   Bairro 1º de Maio, Viana - Luanda
                 </span>
               </li>
 
-              <li className="flex items-center gap-3">
-                <FaWhatsapp className="text-[#4fb4ff]" />
+              <li className="flex items-center gap-2">
+                <FaWhatsapp
+                  className="p-1 bg-[#0a68a7d8] rounded-full shrink-0"
+                  size={24}
+                />
                 <span>+244 941 326 479</span>
               </li>
 
-              <li className="flex items-center gap-3">
-                <MdAlternateEmail className="text-[#4fb4ff]" />
+              <li className="flex items-center gap-2">
+                <MdAlternateEmail
+                  className="p-1 bg-[#0a68a7d8] rounded-full shrink-0"
+                  size={24}
+                />
                 <span>dmt@farmaclinic.net</span>
               </li>
             </ul>
           </div>
 
-          {/* Coluna 3 */}
+          {/* Menu */}
           <div>
-            <h3 className="font-semibold text-lg mb-5">Serviços</h3>
+            <h3 className="font-bold text-lg mb-4">Menu</h3>
 
-            <ul className="space-y-3 text-gray-200 text-sm lg:text-base">
-              <li className="hover:text-white cursor-pointer">Exames Admissionais</li>
-              <li className="hover:text-white cursor-pointer">Exames Periódicos</li>
-              <li className="hover:text-white cursor-pointer">Exames Demissionais</li>
-              <li className="hover:text-white cursor-pointer">Retorno ao Trabalho</li>
-              <li className="hover:text-white cursor-pointer">Mudança de Função</li>
+            <ul className="space-y-3 text-sm lg:text-base">
+              <li className="hover:text-gray-300 cursor-pointer">Início</li>
+              <li className="hover:text-gray-300 cursor-pointer">Sobre Nós</li>
+              <li className="hover:text-gray-300 cursor-pointer">Serviços</li>
+              <li className="hover:text-gray-300 cursor-pointer">Contactos</li>
+            </ul>
+          </div>
+
+          {/* Serviços */}
+          <div>
+            <h3 className="font-bold text-lg mb-4">Serviços</h3>
+
+            <ul className="space-y-3 text-sm lg:text-base">
+              <li>Exames Admissionais</li>
+              <li>Exames Periódicos</li>
+              <li>Exames Demissionais</li>
+              <li>Retorno ao Trabalho</li>
+              <li>Mudança de Função</li>
             </ul>
           </div>
         </div>
       </div>
 
-      {/* Barra Final */}
-      <div className="border-t border-white/10 text-center py-4 text-sm text-gray-300">
+      {/* Barra inferior */}
+      <div className="bg-[#0a68a7d8] text-center text-sm py-4 px-4">
         © {new Date().getFullYear()} ITSALL4U. Todos os direitos reservados.
       </div>
     </footer>
