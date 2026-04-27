@@ -21,7 +21,7 @@ export default function Footer() {
               className="object-contain"
             />
 
-            <div className="flex gap-3 text-white text-lg">
+            <div className="flex gap-3 text-white text-base lg:text-lg">
               <FaYoutube className="cursor-pointer hover:text-red-500 transition" />
               <FaInstagram className="cursor-pointer hover:text-pink-500 transition" />
               <GrFacebookOption className="cursor-pointer hover:text-blue-500 transition" />
@@ -31,7 +31,7 @@ export default function Footer() {
 
           {/* Contactos */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Contacto</h3>
+            <h3 className="font-bold text-base lg:text-lg mb-4">Contacto</h3>
 
             <ul className="space-y-4 text-sm lg:text-base">
               <li className="flex items-start gap-2">
@@ -39,7 +39,7 @@ export default function Footer() {
                   className="p-1 bg-[#1b73a0] rounded-full shrink-0"
                   size={24}
                 />
-                <span>
+                <span className="text-sme lg:text-base">
                   Rua 11 de Novembro, Casa S/N <br />
                   Bairro 1º de Maio, Viana - Luanda
                 </span>
@@ -65,7 +65,7 @@ export default function Footer() {
 
           {/* Menu */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Menu</h3>
+            <h3 className="font-bold text-base lg:text-lg mb-4">Menu</h3>
 
             <ul className="space-y-3 text-sm lg:text-base">
               <li className="hover:text-gray-300 cursor-pointer">Início</li>

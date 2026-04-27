@@ -64,7 +64,7 @@ export default function Header() {
 
         {/* Menu Desktop */}
         <nav className="hidden lg:block">
-          <ul className="flex items-center gap-6 text-sm font-medium">
+          <ul className="flex items-center gap-6 text-base lg:text-lg ">
             <li className="cursor-pointer hover:text-[#1b73a0] transition">Início</li>
             <li className="cursor-pointer hover:text-[#1b73a0] transition">Sobre Nós</li>
             <li className="cursor-pointer hover:text-[#1b73a0] transition">Serviços</li>
@@ -78,10 +78,10 @@ export default function Header() {
       <button className="bg-[#44a631] hover:bg-green-600 text-white px-4 py-2 rounded-full font-medium shadow-lg">
         Solicitar Proposta
         </button>
-         <FaYoutube className="cursor-pointer hover:text-red-600" />
-              <FaInstagram className="cursor-pointer hover:text-pink-500" />
-              <GrFacebookOption className="cursor-pointer hover:text-blue-600" />
-              <FaLinkedinIn className="cursor-pointer hover:text-blue-700" />
+         <FaYoutube className="cursor-pointer hover:text-red-600 text-base lg:text-lg" />
+              <FaInstagram className="cursor-pointer hover:text-pink-500 text-base lg:text-lg" />
+              <GrFacebookOption className="cursor-pointer hover:text-blue-600 text-base lg:text-lg" />
+              <FaLinkedinIn className="cursor-pointer hover:text-blue-700 text-base lg:text-lg" />
 
         
         </div>
