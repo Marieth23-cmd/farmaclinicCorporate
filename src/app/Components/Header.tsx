@@ -62,7 +62,7 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Menu Desktop */}
+        {/* Menu Desktop  enviando commit novamente */}
         <nav className="hidden lg:block">
           <ul className="flex items-center gap-6 text-base lg:text-lg ">
             <li className="cursor-pointer hover:text-[#1b73a0] transition">Início</li>
