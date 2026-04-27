@@ -6,7 +6,7 @@ import { MdAlternateEmail } from "react-icons/md";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#022241d8] text-white">
+    <footer className="bg-[#004662] text-white">
       <div className="max-w-6xl mx-auto px-4">
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 py-10 lg:py-14 items-start">
@@ -36,7 +36,7 @@ export default function Footer() {
             <ul className="space-y-4 text-sm lg:text-base">
               <li className="flex items-start gap-2">
                 <FaLocationDot
-                  className="p-1 bg-[#0a68a7d8] rounded-full shrink-0"
+                  className="p-1 bg-[#1b73a0] rounded-full shrink-0"
                   size={24}
                 />
                 <span>
@@ -47,7 +47,7 @@ export default function Footer() {
 
               <li className="flex items-center gap-2">
                 <FaWhatsapp
-                  className="p-1 bg-[#0a68a7d8] rounded-full shrink-0"
+                  className="p-1 bg-[#1b73a0] rounded-full shrink-0"
                   size={24}
                 />
                 <span>+244 941 326 479</span>
@@ -91,7 +91,7 @@ export default function Footer() {
       </div>
 
       {/* Barra inferior */}
-      <div className="bg-[#0a68a7d8] text-center text-sm py-4 px-4">
+      <div className="bg-[#1b73a0] text-center text-sm py-4 px-4">
         © {new Date().getFullYear()} ITSALL4U. Todos os direitos reservados.
       </div>
     </footer>

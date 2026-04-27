@@ -9,7 +9,7 @@ export default function Servicos() {
         
         {/* Lado esquerdo */}
         <div>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl mb-6 text-[#0a68a7d8]">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl mb-6 text-[#1b73a0]">
             Porquê investir na
             <span className="font-bold"> saúde ocupacional?</span>
           </h1>
@@ -27,27 +27,27 @@ export default function Servicos() {
 
           {/* Caixa benefícios */}
           <div className="mt-10 bg-black/5 px-4 py-4 rounded-tr-[120px]">
-            <h2 className="text-xl font-bold mb-6 text-[#0a68a7d8]">
+            <h2 className="text-xl font-bold mb-6 text-[#1b73a0]">
               Benefícios
             </h2>
 
             <p className="flex gap-2 mb-3">
-              <FaCheck className="text-[#0a68a7d8]" />
+              <FaCheck className="text-[#1b73a0]" />
               Aumento da produtividade
             </p>
 
             <p className="flex gap-2 mb-3">
-              <FaCheck className="text-[#0a68a7d8]" />
+              <FaCheck className="text-[#1b73a0]" />
               Redução do absentismo
             </p>
 
             <p className="flex gap-2 mb-3">
-              <FaCheck className="text-[#0a68a7d8]" />
+              <FaCheck className="text-[#1b73a0]" />
               Prevenção de doenças ocupacionais
             </p>
 
             <p className="flex gap-2">
-              <FaCheck className="text-[#0a68a7d8]" />
+              <FaCheck className="text-[#1b73a0]" />
               Maior segurança no ambiente de trabalho
             </p>
           </div>

@@ -34,7 +34,7 @@ export default function Solucao() {
             </p>
 
              
-       <button className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-medium shadow-lg">
+       <button className="bg-[#44a631] hover:bg-green-600 text-white px-6 py-3 rounded-full font-medium shadow-lg">
           Solicitar Proposta
          </button>
 

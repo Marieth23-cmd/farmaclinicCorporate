@@ -56,7 +56,7 @@ export default function Header() {
 
           <button
             onClick={() => setIsMenuOpen(true)}
-            className="lg:hidden text-2xl text-black hover:text-[#0a68a7] transition"
+            className="lg:hidden text-2xl text-black hover:text-[#1b73a0] transition"
           >
             <FaBarsStaggered />
           </button>
@@ -65,17 +65,17 @@ export default function Header() {
         {/* Menu Desktop */}
         <nav className="hidden lg:block">
           <ul className="flex items-center gap-6 text-sm font-medium">
-            <li className="cursor-pointer hover:text-[#0a68a7] transition">Início</li>
-            <li className="cursor-pointer hover:text-[#0a68a7] transition">Sobre Nós</li>
-            <li className="cursor-pointer hover:text-[#0a68a7] transition">Serviços</li>
-            <li className="cursor-pointer hover:text-[#0a68a7] transition">Contactos</li>
+            <li className="cursor-pointer hover:text-[#1b73a0] transition">Início</li>
+            <li className="cursor-pointer hover:text-[#1b73a0] transition">Sobre Nós</li>
+            <li className="cursor-pointer hover:text-[#1b73a0] transition">Serviços</li>
+            <li className="cursor-pointer hover:text-[#1b73a0] transition">Contactos</li>
           </ul>
         </nav>
 
         {/* Desktop Right */}
-        <div className="hidden lg:flex items-center gap-4 text-lg text-[#0a68a7d8]">
+        <div className="hidden lg:flex items-center gap-4 text-lg text-[#1b73a0]">
            
-      <button className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full font-medium shadow-lg">
+      <button className="bg-[#44a631] hover:bg-green-600 text-white px-4 py-2 rounded-full font-medium shadow-lg">
         Solicitar Proposta
         </button>
          <FaYoutube className="cursor-pointer hover:text-red-600" />
@@ -112,20 +112,20 @@ export default function Header() {
           {/* Links */}
           <nav className="px-6 py-6">
             <ul className="flex flex-col gap-5 text-base font-medium">
-              <li onClick={closeMenu} className="cursor-pointer hover:text-[#0a68a7]">Início</li>
-              <li onClick={closeMenu} className="cursor-pointer hover:text-[#0a68a7]">Sobre Nós</li>
-              <li onClick={closeMenu} className="cursor-pointer hover:text-[#0a68a7]">Serviços</li>
-              <li onClick={closeMenu} className="cursor-pointer hover:text-[#0a68a7]">Contactos</li>
+              <li onClick={closeMenu} className="cursor-pointer hover:text-[#1b73a0]">Início</li>
+              <li onClick={closeMenu} className="cursor-pointer hover:text-[#1b73a0]">Sobre Nós</li>
+              <li onClick={closeMenu} className="cursor-pointer hover:text-[#1b73a0]">Serviços</li>
+              <li onClick={closeMenu} className="cursor-pointer hover:text-[#1b73a0]">Contactos</li>
             </ul>
           </nav>
 
           {/* Bottom */}
           <div className="mt-auto px-6 pb-8">
-            <button className="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-full text-sm mb-5 transition">
+            <button className="w-full bg-[#44a631] hover:bg-green-600 text-white py-2 rounded-full text-sm mb-5 transition">
               Solicitar Proposta
             </button>
 
-            <div className="flex justify-center gap-4 text-xl text-[#0a68a7d8]">
+            <div className="flex justify-center gap-4 text-xl text-[#1b73a0]">
               <FaYoutube className="cursor-pointer hover:text-red-600" />
               <FaInstagram className="cursor-pointer hover:text-pink-500" />
               <GrFacebookOption className="cursor-pointer hover:text-blue-600" />

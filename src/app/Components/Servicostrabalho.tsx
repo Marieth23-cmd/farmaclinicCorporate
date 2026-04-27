@@ -43,7 +43,7 @@ export default function Servicostrabalho() {
         <div className="mb-14">
           <h1 className="text-3xl md:text-4xl lg:text-5xl max-w-lg">
             Serviços de{" "}
-            <span className="font-bold text-[#0a68a7d8]">Medicina do Trabalho</span>
+            <span className="font-bold text-[#1b73a0]">Medicina do Trabalho</span>
           </h1>
 
           <p className="text-base lg:text-lg mt-3 text-gray-600">
@@ -70,7 +70,7 @@ export default function Servicostrabalho() {
             </div>
 
             {/* Ícone fora do card */}
-            <div className="absolute  left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 z-20">
+            <div className="absolute  left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 z-20 border-x-8 border-white rounded-full bg-white ">
                 <Image
                 src={index.imageicon}
                 alt="icone"
@@ -82,7 +82,7 @@ export default function Servicostrabalho() {
 
             {/* Conteúdo */}
             <div className="p-6 pt-8">
-                <h2 className="text-xl font-semibold text-[#0a68a7d8]">
+                <h2 className="text-xl font-semibold text-[#1b73a0]">
                 {index.title}
                 </h2>
 
@@ -98,7 +98,7 @@ export default function Servicostrabalho() {
     
         </div>
          <div className=" mt-6">
-        <button className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-medium shadow-lg">
+        <button className="bg-[#44a631] hover:bg-green-600 text-white px-6 py-3 rounded-full font-medium shadow-lg">
             VER TODOS OS SERVIÇOS
               </button>
                 </div>
