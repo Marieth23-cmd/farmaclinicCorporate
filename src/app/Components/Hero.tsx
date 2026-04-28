@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="relative w-full overflow-hidden">
 
-      {/* ── DESKTOP ── */}
+      {/* ── DESKTOP ──GKIFUNSUNI */}
       <div className="relative w-full  lg:py-16">
         <Image
           src="https://res.cloudinary.com/dhpa1juyr/image/upload/v1776698271/Img_banner_top_ptqnqd.webp"
