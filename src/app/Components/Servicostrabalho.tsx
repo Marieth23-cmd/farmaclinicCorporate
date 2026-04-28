@@ -41,7 +41,7 @@ export default function Servicostrabalho() {
         
         {/* Título */}
         <div className="mb-14">
-          <h1 className="text-black leading-tight mb-[4%]"
+          <h1 className="text-black leading-tight mb-[2%]"
                 style={{ fontSize: "clamp(1.8rem, 3vw, 3rem)" }}>
             Serviços de{" "}
             <span className="font-bold text-[#1b73a0]">
