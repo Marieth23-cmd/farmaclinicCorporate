@@ -33,7 +33,7 @@ export default function Header() {
       document.removeEventListener("mousedown", handleClickOutside);
       document.body.style.overflow = "";
     };
-  }, [isMenuOpen, handleClickOutside]);
+  }, [isOpen, handleClickOutside]);
 
   const closeMenu = () => {
     setIsMenuOpen(false);
