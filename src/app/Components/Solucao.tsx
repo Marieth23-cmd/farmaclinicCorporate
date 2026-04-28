@@ -2,44 +2,56 @@ import Image from "next/image";
 
 export default function Solucao() {
   return (
-    <section className="relative overflow-hidden h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px]">
+    <section className="relative w-full overflow-hidden">
+      <div
+        className="relative w-full"
+        style={{
+          backgroundImage:
+            "url('https://res.cloudinary.com/dhpa1juyr/image/upload/v1776783831/Img_banner_Amb_wcwqyy.png')",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          aspectRatio: "1920 / 640",
+        }}
+      >
+        <div className="absolute inset-0 z-10 flex items-center">
+          <div className="w-full max-w-6xl mx-auto px-4">
+            <div className="w-[46%] min-w-[280px]">
+              <h1
+                className="text-white leading-tight mb-[4%]"
+                style={{ fontSize: "clamp(1.8rem, 3vw, 3rem)" }}
+              >
+                Soluções que
+                <span className="font-bold"> se adaptam à sua empresa</span>
+              </h1>
 
-      <Image
-        src="https://res.cloudinary.com/dhpa1juyr/image/upload/v1776783831/Img_banner_Amb_wcwqyy.png"
-        alt="solução"
-        fill
-        className="object-cover"
-        priority
-      />
+              <p
+                className="text-gray-200 leading-relaxed mb-[4%]"
+                style={{ fontSize: "clamp(1rem, 1.2vw, 1.125rem)" }}
+              >
+                A FarmaClinic Corporate conta com equipas de profissionais
+                qualificados e unidades móveis totalmente equipadas para a
+                realização de exames ocupacionais.
+              </p>
 
-      {/* Overlay */}
-      <div className="absolute inset-0 " />
+              <p
+                className="text-gray-200 leading-relaxed mb-[4%]"
+                style={{ fontSize: "clamp(1rem, 1.2vw, 1.125rem)" }}
+              >
+                Levamos os nossos serviços até à sua empresa, evitando
+                deslocações e garantindo maior comodidade e eficiência.
+              </p>
 
-      {/* Content */}
-      <div className="absolute inset-0 flex items-center">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div className="max-w-2xl text-white leading-snug">
-            
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4">
-              Soluções que
-              <span className="font-bold"> se adaptam à sua empresa</span>
-            </h1>
-
-            <p className="text-base lg:text-lg mb-4">
-              A FarmaClinic Corporate conta com equipas de profissionais
-              qualificados e unidades móveis totalmente equipadas para a
-              realização de exames ocupacionais.
-            </p>
-
-            <p className="text-base lg:text-lg mb-6">
-              Levamos os nossos serviços até à sua empresa, evitando
-              deslocações e garantindo maior comodidade e eficiência.
-            </p>
-
-            <button className="bg-[#44a631] hover:bg-green-600 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-full font-medium shadow-lg text-base lg:text-lg transition-colors">
-              Solicitar Proposta
-            </button>
-
+              <button
+                className="bg-[#44a631] hover:bg-green-600 text-white rounded-full font-medium transition-colors"
+                style={{
+                  fontSize: "clamp(0.9rem, 1vw, 1rem)",
+                  padding: "2% 4.5%",
+                }}
+              >
+                Solicitar Proposta
+              </button>
+            </div>
           </div>
         </div>
       </div>

@@ -3,31 +3,40 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="relative w-full overflow-hidden">
-      <div className="relative min-h-[100vh] md:min-h-[110vh] flex items-center">
+
+      {/* ── DESKTOP ── */}
+      <div className="relative w-full  lg:py-16">
         <Image
           src="https://res.cloudinary.com/dhpa1juyr/image/upload/v1776698271/Img_banner_top_ptqnqd.webp"
           alt="Hero"
-          fill
+          width={1600}
+          height={560}
           priority
-          className="object-cover"
+          className="w-full h-auto block"
         />
 
-        <div className="absolute inset-0 " />
-
-        <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
-          <div className="max-w-2xl lg:max-w-3xl">
-           <h1 className="text-[clamp(2rem,4vw,4.5rem)]  text-white leading-tight mb-4">
+        <div className="absolute inset-0 z-10 flex items-center">
+          <div className="max-w-6xl mx-auto px-6 py-16 sm:px-4 lg:px-8 w-full">
+            <h1
+              className="text-white leading-tight max-w-xl mb-[2%]"
+              style={{ fontSize: "clamp(0.9rem, 2.6vw, 3rem)" }}
+            >
               Cuidar da saúde dos seus colaboradores
-              <span className="font-bold">
-                {" "}é investimento no sucesso da sua empresa
-              </span>
+              <span className="font-bold"> é investimento no sucesso da sua empresa</span>
             </h1>
-
-            <p className="text-sm sm:text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
+            <p
+              className="text-gray-200 mb-[3%] leading-relaxed max-w-xl"
+              style={{ fontSize: "clamp(1rem, 2vw, 1.05rem)" }}
+            >
               Medicina Ocupacional com rigor, proximidade e soluções adaptadas à sua organização
             </p>
-
-            <button className="bg-[#44a631] hover:bg-green-600 text-white px-6 py-3 rounded-full font-medium">
+            <button
+              className="bg-[#44a631] hover:bg-green-600 text-white rounded-full font-medium transition-colors"
+              style={{
+                fontSize: "clamp(0.5rem, 0.9vw, 1rem)",
+                padding: "1% 4%",
+              }}
+            >
               Solicitar Proposta
             </button>
           </div>

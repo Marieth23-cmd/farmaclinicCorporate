@@ -3,13 +3,16 @@ import Image from "next/image";
 
 export default function Servicos() {
   return (
-    <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-10 lg:py-16">
+    <section className="max-w-6xl mx-auto px-4 sm:px-6 py-8 lg:pb-16 "
+    >
 
       <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10">
 
         {/* Lado esquerdo */}
         <div>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 sm:mb-6 text-[#1b73a0]">
+          <h1 
+          className=" leading-tight mb-[4%] text-[#1b73a0]"
+                style={{ fontSize: "clamp(1.8rem, 3vw, 3rem)" }}>
             Porquê investir na
             <span className="font-bold"> saúde ocupacional?</span>
           </h1>

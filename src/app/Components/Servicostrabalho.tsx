@@ -36,11 +36,13 @@ export default function Servicostrabalho() {
 
   return (
     <div className="py-8 md:py-10 lg:py-16">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4"
+      >
         
         {/* Título */}
         <div className="mb-14">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl max-w-lg leading-tight">
+          <h1 className="text-black leading-tight mb-[4%]"
+                style={{ fontSize: "clamp(1.8rem, 3vw, 3rem)" }}>
             Serviços de{" "}
             <span className="font-bold text-[#1b73a0]">
               Medicina do Trabalho
@@ -54,7 +56,7 @@ export default function Servicostrabalho() {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-10">
           {Servicos.map((index, key) => (
             <div
               key={key}
