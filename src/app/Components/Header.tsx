@@ -1,11 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { GrFacebookOption } from "react-icons/gr";
 import { FaBarsStaggered, FaLinkedinIn } from "react-icons/fa6";
 import { useState, useEffect, useCallback, useRef } from "react";
 import { AiOutlineClose } from "react-icons/ai";
+import Link from "next/link";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -65,10 +66,10 @@ export default function Header() {
         {/* Menu Desktop  enviando commit novamente */}
         <nav className="hidden lg:block">
           <ul className="flex items-center gap-6 text-base lg:text-lg ">
-            <li className="cursor-pointer hover:text-[#1b73a0] transition">Início</li>
-            <li className="cursor-pointer hover:text-[#1b73a0] transition">Sobre Nós</li>
-            <li className="cursor-pointer hover:text-[#1b73a0] transition">Serviços</li>
-            <li className="cursor-pointer hover:text-[#1b73a0] transition">Contactos</li>
+            <Link href="/" className="cursor-pointer hover:text-[#1b73a0] transition">Início</Link>
+            <Link href="/SobreNos" className="cursor-pointer hover:text-[#1b73a0] transition">Sobre Nós</Link>
+            <Link href="/Servicos" className="cursor-pointer hover:text-[#1b73a0] transition">Serviços</Link>
+            <Link href="/Contactos" className="cursor-pointer hover:text-[#1b73a0] transition">Contactos</Link>
           </ul>
         </nav>
 
@@ -78,7 +79,7 @@ export default function Header() {
           <button className="bg-[#44a631] hover:bg-green-600 text-white px-4 py-2 rounded-full font-medium shadow-lg">
             Solicitar Proposta
           </button>
-          <FaYoutube className="cursor-pointer hover:text-red-600 text-base lg:text-lg" />
+          
           <FaInstagram className="cursor-pointer hover:text-pink-500 text-base lg:text-lg" />
           <GrFacebookOption className="cursor-pointer hover:text-blue-600 text-base lg:text-lg" />
           <FaLinkedinIn className="cursor-pointer hover:text-blue-700 text-base lg:text-lg" />
@@ -110,10 +111,18 @@ export default function Header() {
           {/* Links */}
           <nav className="px-6 py-6">
             <ul className="flex flex-col gap-5 text-base font-medium">
-              <li onClick={closeMenu} className="cursor-pointer hover:text-[#1b73a0]">Início</li>
-              <li onClick={closeMenu} className="cursor-pointer hover:text-[#1b73a0]">Sobre Nós</li>
-              <li onClick={closeMenu} className="cursor-pointer hover:text-[#1b73a0]">Serviços</li>
-              <li onClick={closeMenu} className="cursor-pointer hover:text-[#1b73a0]">Contactos</li>
+              <Link href="/" className="cursor-pointer hover:text-[#1b73a0] transition" onClick={closeMenu}>
+                Início
+              </Link>
+              <Link href="/SobreNos" className="cursor-pointer hover:text-[#1b73a0] transition" onClick={closeMenu}>
+                Sobre Nós
+              </Link>
+              <Link href="/Servicos" className="cursor-pointer hover:text-[#1b73a0] transition" onClick={closeMenu}>
+                Serviços
+              </Link>
+              <Link href="/Contactos" className="cursor-pointer hover:text-[#1b73a0] transition" onClick={closeMenu}>
+                Contactos
+              </Link>
             </ul>
           </nav>
 
@@ -124,7 +133,7 @@ export default function Header() {
             </button>
 
             <div className="flex justify-center gap-4 text-xl text-[#1b73a0]">
-              <FaYoutube className="cursor-pointer hover:text-red-600" />
+             
               <FaInstagram className="cursor-pointer hover:text-pink-500" />
               <GrFacebookOption className="cursor-pointer hover:text-blue-600" />
               <FaLinkedinIn className="cursor-pointer hover:text-blue-700" />

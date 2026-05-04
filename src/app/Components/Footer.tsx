@@ -1,18 +1,19 @@
 import Image from "next/image";
-import { FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp} from "react-icons/fa";
 import { GrFacebookOption } from "react-icons/gr";
 import { FaLinkedinIn, FaLocationDot } from "react-icons/fa6";
 import { MdAlternateEmail } from "react-icons/md";
+import Link from "next/link";
 
 export default function Footer() {
   return (
     <footer className="bg-[#004662] text-white">
       <div className="max-w-6xl mx-auto px-4">
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 py-10 lg:py-14 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-10 lg:py-14 items-start">
 
           {/* Logo */}
-          <div className="space-y-5">
+          <div className="space-y-6">
             <Image
               src="https://res.cloudinary.com/dhpa1juyr/image/upload/v1776868935/Logo_branco_cd3dhn.png"
               alt="Logo"
@@ -21,9 +22,9 @@ export default function Footer() {
               className="object-contain"
             />
 
-            <div className="flex gap-3 text-white text-base lg:text-lg">
-              <FaYoutube className="cursor-pointer hover:text-red-500 transition" />
-              <FaInstagram className="cursor-pointer hover:text-pink-500 transition" />
+            <div className="flex gap-3 ml-36 text-white text-base lg:text-lg">
+             
+              <FaInstagram className="cursor-pointer  hover:text-pink-500 transition" />
               <GrFacebookOption className="cursor-pointer hover:text-blue-500 transition" />
               <FaLinkedinIn className="cursor-pointer hover:text-blue-400 transition" />
             </div>
@@ -65,28 +66,25 @@ export default function Footer() {
 
           {/* Menu */}
           <div>
-            <h3 className="font-bold text-base lg:text-lg mb-4">Menu</h3>
+            <h3 className="font-bold text-baselg:text-lg mb-4">Menu</h3>
 
-            <ul className="space-y-3 text-sm lg:text-base">
-              <li className="hover:text-gray-300 cursor-pointer">Início</li>
-              <li className="hover:text-gray-300 cursor-pointer">Sobre Nós</li>
-              <li className="hover:text-gray-300 cursor-pointer">Serviços</li>
-              <li className="hover:text-gray-300 cursor-pointer">Contactos</li>
+            <ul className="space-y-3 text-sm lg:text-base flex flex-col ">
+              <Link href="/" className="hover:text-gray-300 cursor-pointer">
+                Início
+              </Link>
+              <Link href="/SobreNos" className="hover:text-gray-300 cursor-pointer">
+                Sobre Nós
+              </Link>
+              <Link href="/Servicos" className="hover:text-gray-300 cursor-pointer">
+                Serviços
+              </Link>
+              <Link href="/Contactos" className="hover:text-gray-300 cursor-pointer">
+                Contactos
+              </Link>
             </ul>
           </div>
 
-          {/* Serviços */}
-          <div>
-            <h3 className="font-bold text-lg mb-4">Serviços</h3>
-
-            <ul className="space-y-3 text-sm lg:text-base">
-              <li>Exames Admissionais</li>
-              <li>Exames Periódicos</li>
-              <li>Exames Demissionais</li>
-              <li>Retorno ao Trabalho</li>
-              <li>Mudança de Função</li>
-            </ul>
-          </div>
+         
         </div>
       </div>
 
