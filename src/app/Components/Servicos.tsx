@@ -29,27 +29,27 @@ export default function Servicos() {
           </p>
 
           {/* Caixa benefícios */}
-          <div className="mt-6 sm:mt-10 bg-black/5 px-3 sm:px-4 py-3 sm:py-4 rounded-tr-[60px] sm:rounded-tr-[120px]">
+          <div className="w-[80%] mt-6 sm:mt-10 bg-black/10 px-3 sm:px-4 py-3 sm:py-4 rounded-tr-[60px] sm:rounded-tr-[120px]">
             <h2 className="text-lg sm:text-xl font-bold mb-4 sm:mb-6 text-[#1b73a0]">
               Benefícios
             </h2>
 
-            <p className="flex gap-2 mb-2 sm:mb-3 text-base lg:text-lg">
+            <p className="flex gap-2 mb-2 sm:mb-3 text-base lg:text-lg text-gray-600">
               <FaCheck className="text-[#1b73a0] shrink-0 mt-0.5" />
               Aumento da produtividade
-            </p>
+            </p>  
 
-            <p className="flex gap-2 mb-2 sm:mb-3 text-base lg:text-lg">
+            <p className="flex gap-2 mb-2 sm:mb-3 text-base lg:text-lg text-gray-600">
               <FaCheck className="text-[#1b73a0] shrink-0 mt-0.5" />
               Redução do absentismo
             </p>
 
-            <p className="flex gap-2 mb-2 sm:mb-3 text-base lg:text-lg">
+            <p className="flex gap-2 mb-2 sm:mb-3 text-base lg:text-lg text-gray-600">
               <FaCheck className="text-[#1b73a0] shrink-0 mt-0.5" />
               Prevenção de doenças ocupacionais
             </p>
 
-            <p className="flex gap-2 text-base lg:text-lg">
+            <p className="flex gap-2 text-base lg:text-lg text-gray-600">
               <FaCheck className="text-[#1b73a0] shrink-0 mt-0.5" />
               Maior segurança no ambiente de trabalho
             </p>
@@ -57,7 +57,7 @@ export default function Servicos() {
         </div>
 
         {/* Lado direito - Imagem */}
-        <div className="relative w-full h-[300px] sm:h-[350px] md:h-[400px] lg:h-[500px]">
+        <div className="relative w-full h-[300px] sm:h-[350px] md:h-[400px] lg:h-[650px]">
           <Image
             src="https://res.cloudinary.com/dhpa1juyr/image/upload/v1776782372/Img_logo_ykulq6.png"
             alt="Saúde ocupacional"
