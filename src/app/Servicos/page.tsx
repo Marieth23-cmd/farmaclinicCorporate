@@ -101,7 +101,12 @@ export default function Servicos() {
 
           {/* conteudo da página  3 */}
            <section className="max-w-6xl mx-auto px-4 lg:pb-16">
-             <div className=" leading-tight mb-[3%] text-gray-600 max-w-3xl flex flex-col gap-6"
+             <motion.div 
+             initial={{ opacity: 0, filter: "blur(2px)" }}
+              whileInView={{ opacity: 1, filter: "blur(0px)" }}
+              transition={{ duration: 1 }}
+              viewport={{ once: false, amount: 0.2 }}
+             className=" leading-tight mb-[3%] text-gray-600 max-w-3xl flex flex-col gap-6"
                  style={{ fontSize: "clamp(1rem, 1.2vw, 1.125rem)" }}>
                
                
@@ -116,7 +121,7 @@ export default function Servicos() {
                            reduzir riscos e contribuir para o crescimento sustentável da sua empresa. 
                         </span>
    
-             </div>
+             </motion.div>
          </section>
    
 
