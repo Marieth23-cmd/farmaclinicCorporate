@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import {motion} from "framer-motion";
 
 export default function Hero() {
   return (
@@ -17,19 +19,25 @@ export default function Hero() {
 
         <div className="absolute inset-0 z-10 flex items-center">
           <div className="max-w-6xl mx-auto px-6 py-16 sm:px-4 lg:px-8 w-full">
-            <h1
+            <motion.h1
               className="text-white leading-tight max-w-xl mb-[2%]"
               style={{ fontSize: "clamp(0.9rem, 2.6vw, 3rem)" }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
             >
               Cuidar da saúde dos seus colaboradores
               <span className="font-bold"> é investimento no sucesso da sua empresa</span>
-            </h1>
-            <p
+            </motion.h1>
+            <motion.p
               className="text-gray-200 mb-[3%] leading-relaxed max-w-xl"
               style={{ fontSize: "clamp(1rem, 2vw, 1.05rem)" }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
             >
               Medicina Ocupacional com rigor, proximidade e soluções adaptadas à sua organização
-            </p>
+            </motion.p>
             <button
               className="bg-[#44a631] hover:bg-[#3d8f2d] text-white rounded-full font-medium transition-colors"
               style={{

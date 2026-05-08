@@ -83,13 +83,18 @@ export default function Servicos() {
          
                  <div className="absolute inset-0 z-10 flex items-center max-w-6xl mx-auto px-4">
                    
-                     <h1
+                     <motion.h1
+                   
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                      
                        className="text-white leading-tight max-w-xl mb-[2%] font-bold"
                        style={{ fontSize: "clamp(0.9rem, 2.6vw, 3rem)" }}
                      >
                        Serviços
                       
-                     </h1>
+                     </motion.h1>
                     
                  
                  </div>
@@ -267,7 +272,7 @@ export default function Servicos() {
           Entre em contacto com a nossa equipa e descubra soluções de saúde ocupacional
           ajustadas às necessidades da sua empresa
         </p>
-        <button className="w-1/3 bg-[#44a631] hover:bg-green-600 text-white px-2 py-2 rounded-full text-sm mb-5 transition">
+        <button className="w-1/3 bg-[#44a631] hover:bg-[#3d8f2d] text-white px-2 py-2 rounded-full text-sm mb-5 transition">
           FALE CONNOSCO
         </button>
       </div>

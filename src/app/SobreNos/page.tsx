@@ -1,8 +1,10 @@
+"use client";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import Image from "next/image";
 import Wpp from "../Components/Wpp" 
 import { FaCheck } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 
 export default function Contactos() {
@@ -27,13 +29,17 @@ export default function Contactos() {
       
               <div className="absolute inset-0 z-10 flex items-center max-w-6xl mx-auto px-4">
                
-                  <h1
+                  <motion.h1
+                  
                     className="text-white leading-tight max-w-xl mb-[2%] font-bold"
                     style={{ fontSize: "clamp(0.9rem, 2.6vw, 3rem)" }}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
                   >
                     Sobre Nós
                    
-                  </h1>
+                  </motion.h1>
                  
                
               </div>
