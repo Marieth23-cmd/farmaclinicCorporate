@@ -62,7 +62,7 @@ export default function Servicos() {
             src="https://res.cloudinary.com/dhpa1juyr/image/upload/v1776782372/Img_logo_ykulq6.png"
             alt="Saúde ocupacional"
             fill
-            className="object-contain"
+            className="object-contain scale-105 transition-transform duration-500 "
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
         </div>

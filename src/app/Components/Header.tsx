@@ -48,7 +48,7 @@ export default function Header() {
         {/* Logo */}
         <div className="flex items-center justify-between w-full lg:w-auto">
           <Image
-            src="https://res.cloudinary.com/dhpa1juyr/image/upload/v1777386170/FarmaClinic_Corporate_Medicina_do_Trabalho_Horizontal_bdczwe.png"
+            src="https://res.cloudinary.com/dhpa1juyr/image/upload/v1778250544/FarmaClinic_Corporate_Horizontal_sxwgyn.png"
             alt="Logo"
             width={190}
             height={80}
@@ -128,9 +128,12 @@ export default function Header() {
 
           {/* Bottom */}
           <div className="mt-auto px-6 pb-8">
-            <button className="w-full bg-[#44a631] hover:bg-green-600 text-white py-2 rounded-full text-sm mb-5 transition">
+            <div className="mt-auto px-6 pb-8">
+            <button className="w-full bg-[#44a631] hover:bg-[#3d8f2d] text-white py-2 
+            rounded-full text-sm mb-5  transition-transform  duration-500 hover:scale-110">
               Solicitar Proposta
             </button>
+          </div>
 
             <div className="flex justify-center gap-4 text-xl text-[#1b73a0]">
              

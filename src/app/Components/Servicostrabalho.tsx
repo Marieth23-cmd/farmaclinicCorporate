@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image"
+import {motion} from "framer-motion"
 
 export default function Servicostrabalho() {
   const Servicos = [
@@ -58,9 +60,18 @@ export default function Servicostrabalho() {
         {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-10">
           {Servicos.map((index, key) => (
-            <div
+            <motion.div
               key={key}
               className="bg-white rounded-2xl shadow-sm border border-gray-300 relative"
+              initial={{ opacity: 0, y: 80 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ y: -2 }}
+              viewport={{ once: false, amount: 0.2 }}
+              transition={{
+                duration: 0.7,
+                delay: key * 0.2,
+                ease: "easeOut",
+              }}
             >
               {/* Imagem */}
               <div className="relative w-full h-52 rounded-t-2xl overflow-hidden">
@@ -68,7 +79,7 @@ export default function Servicostrabalho() {
                   src={index.image}
                   alt={index.title}
                   fill
-                  className="object-cover"
+                  className="object-cover scale-105 hover:scale-110 transition-transform duration-500"
                 />
               </div>
 
@@ -93,13 +104,13 @@ export default function Servicostrabalho() {
                   {index.descricacao}
                 </p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
 
         {/* Botão */}
         <div className="mt-6">
-          <button className="bg-[#44a631] hover:bg-green-600 text-white px-6 py-3 rounded-full font-medium shadow-lg">
+          <button className="bg-[#44a631] hover:bg-[#3d8f2d] text-white px-6 py-3 rounded-full font-medium shadow-lg">
             VER TODOS OS SERVIÇOS
           </button>
         </div>

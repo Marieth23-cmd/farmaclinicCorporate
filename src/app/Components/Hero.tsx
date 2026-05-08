@@ -31,7 +31,7 @@ export default function Hero() {
               Medicina Ocupacional com rigor, proximidade e soluções adaptadas à sua organização
             </p>
             <button
-              className="bg-[#44a631] hover:bg-green-600 text-white rounded-full font-medium transition-colors"
+              className="bg-[#44a631] hover:bg-[#3d8f2d] text-white rounded-full font-medium transition-colors"
               style={{
                 fontSize: "clamp(0.5rem, 0.9vw, 1rem)",
                 padding: "1% 4%",

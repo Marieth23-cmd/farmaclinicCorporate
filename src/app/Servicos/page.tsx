@@ -1,7 +1,9 @@
+"use client";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import Image from "next/image";
 import Wpp from "../Components/Wpp"
+import {motion} from "framer-motion"
 
 
 export default function Servicos() {
@@ -118,7 +120,7 @@ export default function Servicos() {
          </section>
    
 
-         <section className="bg-blue-200 pb-16 mb-16">
+         <section className="bg-[#cde2ea] pb-16 mb-16">
               <div className="flex  gap-24 max-w-6xl mx-auto px-4 py-6 translate-y-[18%] items-start">
 
                 <span className="text-[#1b73a0] max-w-[280px] shrink-0 leading-tight"
@@ -161,19 +163,28 @@ export default function Servicos() {
              {/* Grid */}
                 <div className="flex flex-col gap-12 lg:gap-10 rounded-xl">
                   {Servicos.map((index, key) => (
-                    <div
-                      key={key}
-                      className="flex bg-white rounded-2xl shadow-sm border border-gray-300"
-                    >
+                    <motion.div
+                            key={key}
+                            initial={{ opacity: 0, y: 80 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            whileHover={{ y: -2 }}
+                            viewport={{ once: false, amount: 0.2 }}
+                            transition={{
+                              duration: 0.7,
+                              delay: key * 0.2,
+                              ease: "easeOut",
+                            }}
+                            className="flex bg-white rounded-2xl shadow-sm border border-gray-300"
+                          >
                     {/* Lado da imagem */}
                         <div className="relative w-1/3  shrink-0 overflow-visible">
                           {/* Imagem */}
-                          <div className="relative w-full h-full overflow-hidden">
+                          <div className="relative w-full h-full overflow-hidden rounded-l-xl">
                             <Image
                               src={index.image}
                               alt={index.title}
                               fill
-                              className="object-cover rounded-l-xl"
+                              className="object-cover rounded-l-xl scale-105 transition-transform duration-500 hover:scale-110"
                             />
                           </div>
 
@@ -207,7 +218,7 @@ export default function Servicos() {
                         </p>
                       </div>
 
-                    </div>
+                    </motion.div>
                   ))}
                 </div>
                 </div>
