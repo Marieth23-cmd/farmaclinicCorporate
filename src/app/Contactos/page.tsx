@@ -116,13 +116,13 @@ export default function Contactos() {
               <div className="flex flex-col gap-16 max-w-[280px] mt-6">
                 <span style={{ fontSize: "clamp(1rem, 1.2vw, 1.125rem)" }}>
                   <span className="font-bold block">Farmaclinic - Centro Médico </span>
-                  <span> 
+                  <span className="text-gray-600"> 
                     Rua 11 de Novembro, S/N BAIRRO 1º
                     Viana , Luanda-Angola
                   </span>
                 </span> 
               
-                <span style={{ fontSize: "clamp(1rem, 1.2vw, 1.125rem)" }}>
+                <span className="text-gray-600" style={{ fontSize: "clamp(1rem, 1.2vw, 1.125rem)" }}>
                 <span className="font-bold text-[#1b73a0] block">Como Chegar </span>
                   Estamos localizados numa das principais vias de
                   Luanda, com fácil acesso para toda zona de Luanda Sul
