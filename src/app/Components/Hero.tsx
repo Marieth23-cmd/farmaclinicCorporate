@@ -64,7 +64,7 @@ export default function Hero() {
         />
 
         <div className="absolute inset-0 z-10 flex items-center">
-          <div className="max-w-6xl mx-auto px-6 py-16 sm:px-4 md:px-8 w-full">
+          <div className="max-w-6xl mx-auto px-6 py-16 px-4 sm:px-6 md:px-8 w-full">
             <motion.h1
               className="text-white text-2xl sm:text-2xl leading-tight max-w-xl mb-3"
               

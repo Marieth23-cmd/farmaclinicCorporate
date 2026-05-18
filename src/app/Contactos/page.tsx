@@ -17,7 +17,7 @@ export default function Contactos() {
        <section className="relative w-full overflow-hidden">
       
             {/* ── DESKTOP ──GKIFUNSUNI */}
-            <div className="relative w-full  lg:py-20">
+            <div className="relative w-full mt-20 hidden lg:block">
               <Image
                 src="https://res.cloudinary.com/dhpa1juyr/image/upload/v1777995567/Img_banner_Contacto_weua9r.png"
                 alt="Hero"
@@ -26,8 +26,11 @@ export default function Contactos() {
                 priority
                 className="w-full h-auto block"
               />
+
+              
+           
       
-              <div className="absolute inset-0 z-10 flex items-center max-w-6xl mx-auto px-4">
+              <div className="absolute inset-0 z-10 flex items-center max-w-6xl mx-auto px-4  sm:px-6 md:px-8">
                
                   <motion.h1
                     className="text-white leading-tight max-w-xl mb-[2%] font-bold"
@@ -43,108 +46,165 @@ export default function Contactos() {
                 
               </div>
             </div>
-          </section>
-
-
-        {/* conteudo da página  1 */}
-        <section className="max-w-6xl mx-auto px-4 lg:pb-16">
-          <div>
-
-            <h1 className=" leading-tight mb-[3%] text-[#1b73a0] font-bold"
-                style={{ fontSize: "clamp(1.8rem, 3vw, 3rem)" }}>
-              Fale Conosco
-            </h1>
-           
-          <div className="flex items-start gap-24 mb-4">
-           
-        <div className="flex flex-col items-start mb-4">
-  
- 
-
-        <div className="flex items-start gap-24 mb-10">
-
-            <p className="text-gray-600 text-base lg:text-lg flex" 
-            style={{ fontSize: "clamp(1rem, 1.2vw, 1.125rem)" }}>
-              <span className="font-bold">Telefones:</span>
-              <span className="flex flex-col ml-1">
-                <span>+244 947 885 316</span>
-                <span>+244 912 907 048</span>
-              </span>
-            </p>
-
-            <p className="text-gray-600 text-base lg:text-lg" style={{ fontSize: "clamp(1rem, 1.2vw, 1.125rem)" }}>
-              <span className="font-bold">Email:</span>
-              <span className="ml-1">dmt@farmaclinic.net</span>
-            </p>
-
-          </div>
-
-          <div className="flex flex-col items-start bg-black/5 px-3 sm:px-4 py-3 sm:py-4"
-            style={{ fontSize: "clamp(1rem, 1.2vw, 1.125rem)" }}>
-            
-            <p className="text-gray-600 font-bold text-lg flex gap-2">
-              <FaWhatsapp className="text-3xl text-[#44a631]"/>
-              FALE CONOSCO
-            </p>
-
-            <span className="text-[#44a631]">+244 947 885 316</span>
-
-          </div>
-            
-          </div>
-
-                    
-          </div>
-          </div>
-      </section>
 
 
 
-        <section className="max-w-6xl mx-auto px-4 lg:pb-16">
+      {/* ── Mobile ──GKIFUNSUNI */}
+          <div className="relative w-full  lg:py-20 block lg:hidden pt-20">
+              <Image
+                src="https://res.cloudinary.com/dhpa1juyr/image/upload/v1778855663/Img_banner_Contacto_phk9b6.webp"
+                alt="Hero"
+                width={1600}
+                height={560}
+                priority
+                className="w-full h-auto block overflow-hidden"
+              />
 
-          <div className="flex flex-col lg:flex-row gap-8 items-stretch">
-
-            {/* Texto */}
-            <div className="flex flex-col justify-between lg:w-1/2">
-              <h1
-                className="leading-tight  text-[#1b73a0] font-bold"
-                style={{ fontSize: "clamp(1.8rem, 3vw, 3rem)" }}
-              >
-                Localização
-              </h1>
-
-              <div className="flex flex-col gap-16 max-w-[280px] mt-6">
-                <span style={{ fontSize: "clamp(1rem, 1.2vw, 1.125rem)" }}>
-                  <span className="font-bold block">Farmaclinic - Centro Médico </span>
-                  <span className="text-gray-600"> 
-                    Rua 11 de Novembro, S/N BAIRRO 1º
-                    Viana , Luanda-Angola
-                  </span>
-                </span> 
               
-                <span className="text-gray-600" style={{ fontSize: "clamp(1rem, 1.2vw, 1.125rem)" }}>
-                <span className="font-bold text-[#1b73a0] block">Como Chegar </span>
-                  Estamos localizados numa das principais vias de
-                  Luanda, com fácil acesso para toda zona de Luanda Sul
-                </span>
+           
+      
+              <div className="absolute inset-0 z-10 flex items-center max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
+               
+                  <motion.h1
+                    className="text-white text-2xl max-w-xl mb-4 font-bold"
+                   
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    Contacto
+                   
+                  </motion.h1>
+                 
+                
               </div>
             </div>
+</section>
 
-            {/* Mapa */}
-            <div className="lg:w-full w-full min-h-[300px]">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6!2d13.2341!3d-8.8368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f15b4b4b4b4b%3A0x0!2sFarmaclinic%20Centro%20M%C3%A9dico%2C%20Rua%2011%20de%20Novembro%2C%20Luanda!5e0!3m2!1spt!2sao!4v1700000000000"
-                className="w-full h-full"
-                style={{ minHeight: "200px", border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
 
-          </div>
 
-        </section>
+
+
+<section className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-10 md:py-16 ">
+  <h1
+    className="mb-8 font-bold text-[#1b73a0] leading-tight"
+   style={{
+          fontSize: "clamp(1.4rem, 2.5vw, 2.5rem)",
+        }}
+  >
+    Fale Conosco
+  </h1>
+
+  {/* GRID principal (resolve todos os problemas de responsividade) */}
+  <div className="grid md:grid-cols-2 gap-8 md:gap-16">
+
+    {/* CONTACTOS */}
+    <div className="space-y-6">
+
+      {/* Telefones + Email */}
+      <div className="space-y-4">
+
+        <p
+          className="text-gray-600 flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-2"
+          style={{ fontSize: "clamp(1rem, 1.2vw, 1.125rem)" }}
+        >
+          <span className="font-bold">Telefones:</span>
+          <span className="flex flex-col">
+            <span>+244 947 885 316</span>
+            <span>+244 912 907 048</span>
+          </span>
+        </p>
+
+        <p
+          className="text-gray-600 flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-2"
+          style={{ fontSize: "clamp(1rem, 1.2vw, 1.125rem)" }}
+        >
+          <span className="font-bold">Email:</span>
+          <span>dmt@farmaclinic.net</span>
+        </p>
+
+      </div>
+
+      {/* WhatsApp box */}
+      <div className="flex flex-col items-start bg-black/5 px-4 py-4 rounded-lg">
+        <p
+          className="font-bold flex items-center gap-2 text-gray-700"
+          style={{ fontSize: "clamp(1rem, 1.1vw, 1.25rem)" }}
+        >
+          <FaWhatsapp className="text-[1.25rem] md:text-2xl text-[#44a631]" />
+          FALE CONOSCO
+        </p>
+
+        <span
+          className="text-[#44a631] mt-1"
+          style={{ fontSize: "clamp(1rem, 1.1vw, 1.125rem)" }}
+        >
+          +244 947 885 316
+        </span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+       
+
+       <section className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8  md:pb-16">
+  <div className="flex flex-col lg:flex-row gap-8 items-stretch">
+
+    {/* Texto */}
+    <div className="flex flex-col justify-between lg:w-1/2">
+
+      <h1
+      style={{
+          fontSize: "clamp(1.4rem, 2.5vw, 2.5rem)",
+        }}
+       className="text-[#1b73a0] font-bold  lg:text-4xl leading-tight mb-4 lg:mb-0">
+        Localização
+      </h1>
+
+      <div className="flex flex-col gap-10 sm:gap-12  max-w-md">
+
+        {/* Endereço */}
+        <div className="max-w-72 md:max-w-none">
+          <p className="font-bold text-base sm:text-lg">
+            Farmaclinic - Centro Médico
+          </p>
+          <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+            Rua 11 de Novembro, S/N BAIRRO 1º Viana, Luanda - Angola
+          </p>
+        </div>
+
+        {/* Como chegar */}
+        <div className="space-y-1">
+          <p className="font-bold text-[#1b73a0] text-base sm:text-lg">
+            Como Chegar
+          </p>
+          <p className="text-gray-600 text-sm max-w-72 md:max-w-none  sm:text-base leading-relaxed">
+            Estamos localizados numa das principais vias de Luanda, com fácil acesso para toda zona de Luanda Sul.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    {/* Mapa */}
+    <div className="lg:w-1/2 w-full min-h-[300px] sm:min-h-[350px] md:min-h-[250px]">
+     <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6!2d13.2341!3d-8.8368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f15b4b4b4b4b%3A0x0!2sFarmaclinic%20Centro%20M%C3%A9dico%2C%20Rua%2011%20de%20Novembro%2C%20Luanda!5e0!3m2!1spt!2sao!4v1700000000000"
+        className="w-full h-full rounded-lg"
+       
+        style={{ minHeight: "200px", border: 0 }}
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      />
+    </div>
+
+  </div>
+</section>
 
 
       </div>
