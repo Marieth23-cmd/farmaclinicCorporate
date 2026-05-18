@@ -8,9 +8,9 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-[#004662] text-white">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4 lg:px-4 md:px-8 py-10 lg:py-14">
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-10 lg:py-14 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 py-10 lg:py-14 items-start">
 
           {/* Logo */}
           <div className="space-y-6">

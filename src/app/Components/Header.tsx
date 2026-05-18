@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { FaInstagram } from "react-icons/fa";
 import { GrFacebookOption } from "react-icons/gr";
-import { FaBarsStaggered, FaLinkedinIn } from "react-icons/fa6";
+import { FaBars, FaLinkedinIn } from "react-icons/fa6";
 import { useState, useEffect, useCallback, useRef } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import Link from "next/link";
@@ -55,11 +55,13 @@ export default function Header() {
             priority
           />
 
+
+      { /*Button Mobile */}
           <button
             onClick={() => setIsMenuOpen(true)}
             className="lg:hidden text-2xl text-black hover:text-[#1b73a0] transition"
           >
-            <FaBarsStaggered />
+            <FaBars />
           </button>
         </div>
 

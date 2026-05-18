@@ -137,7 +137,6 @@ export default function Servicos() {
                   style={{ fontSize: "clamp(0.9rem, 2.6vw, 3rem)" }}>
                   Cumprimento <span className="font-bold">da Lei Geral do Trabalho</span>
                 </span>
-
                 <span className="flex flex-col gap-10 max-w-[500px]" style={{ fontSize: "clamp(1rem, 1.2vw, 1.125rem)" }}>
                   <span className="text-gray-600">
                     Garantir a saúde dos colaboradores não é apenas uma boa prática - é uma exigência legal
