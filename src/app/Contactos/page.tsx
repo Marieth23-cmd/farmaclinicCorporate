@@ -50,7 +50,7 @@ export default function Contactos() {
 
 
       {/* ── Mobile ──GKIFUNSUNI */}
-          <div className="relative w-full  lg:py-20 block lg:hidden pt-20">
+          <div className="relative w-full block lg:hidden">
               <Image
                 src="https://res.cloudinary.com/dhpa1juyr/image/upload/v1778855663/Img_banner_Contacto_phk9b6.webp"
                 alt="Hero"
