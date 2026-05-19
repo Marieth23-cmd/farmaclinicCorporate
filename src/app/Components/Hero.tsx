@@ -1,8 +1,16 @@
 "use client";
 import Image from "next/image";
 import {motion} from "framer-motion";
+import {MdEmail} from "react-icons/md"
+import Link from "next/link"
 
 export default function Hero() {
+
+   const email = "dmt@farmaclinic.net";
+  const subject = "Solicitação de Proposta";
+  const body = "";
+
+
   return (
     <section className="relative w-full overflow-hidden">
 
@@ -38,7 +46,9 @@ export default function Hero() {
             >
               Medicina Ocupacional com rigor, proximidade e soluções adaptadas à sua organização
             </motion.p>
-            <button
+            <Link  href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
+                  aria-label="Solicitar Proposta por Email"
+
               className="bg-[#44a631] hover:bg-[#3d8f2d] text-white rounded-full font-medium transition-colors"
               style={{
                 fontSize: "clamp(0.5rem, 0.9vw, 1rem)",
@@ -46,7 +56,7 @@ export default function Hero() {
               }}
             >
               Solicitar Proposta
-            </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -84,7 +94,10 @@ export default function Hero() {
             >
               Medicina Ocupacional com rigor, proximidade e soluções adaptadas à sua organização
             </motion.p>
-            <button
+            <Link
+             href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
+              aria-label="Solicitar Proposta por Email"
+
               className="
               bg-[#44a631]
               hover:bg-green-600
@@ -100,7 +113,7 @@ export default function Hero() {
               
             >
               Solicitar Proposta
-            </button>
+            </Link>
           </div>
         </div>
       </div>

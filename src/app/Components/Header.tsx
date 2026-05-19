@@ -46,7 +46,8 @@ export default function Header() {
       <div className="max-w-6xl mx-auto h-full px-5 flex items-center justify-between">
 
         {/* Logo */}
-        <div className="flex items-center justify-between w-full lg:w-auto">
+        <div className="flex items-center justify-between w-full lg:w-auto"> 
+          <Link href="/">
           <Image
             src="https://res.cloudinary.com/dhpa1juyr/image/upload/v1778250544/FarmaClinic_Corporate_Horizontal_sxwgyn.png"
             alt="Logo"
@@ -54,7 +55,7 @@ export default function Header() {
             height={80}
             priority
           />
-
+            </Link>
 
       { /*Button Mobile */}
           <button
