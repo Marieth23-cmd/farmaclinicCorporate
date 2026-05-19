@@ -146,10 +146,13 @@ const email = "dmt@farmaclinic.net";
           {/* Bottom */}
           <div className="mt-auto px-6 pb-8">
             <div className="mt-auto px-6 pb-8">
-            <button className="w-full bg-[#44a631] hover:bg-[#3d8f2d] text-white py-2 
+            <Link 
+             href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
+           aria-label="Solicitar Proposta por Email"
+            className="w-full bg-[#44a631] hover:bg-[#3d8f2d] text-white py-2 
             rounded-full text-sm mb-5  transition-transform  duration-500 hover:scale-110">
               Solicitar Proposta
-            </button>
+            </Link>
           </div>
 
             <div className="flex justify-center gap-4 text-xl text-[#1b73a0]">
