@@ -4,6 +4,7 @@ import Header from "../Components/Header";
 import Image from "next/image";
 import Wpp from "../Components/Wpp"
 import {motion} from "framer-motion"
+import Link from "next/link";
 
 
 export default function Servicos() {
@@ -59,7 +60,9 @@ export default function Servicos() {
 
 
 
-
+    const email = "dmt@farmaclinic.net";
+  const subject = "Solicitação de Proposta";
+  const body = "";
 
 
   return (
@@ -340,9 +343,12 @@ export default function Servicos() {
           ajustadas às necessidades da sua empresa
         </p>
 
-        <button className="bg-[#44a631] hover:bg-[#3d8f2d] text-white px-6 py-3 rounded-full text-sm transition">
+        <Link
+        href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
+        aria-label="Solicitar Proposta por Email"
+        className="bg-[#44a631] hover:bg-[#3d8f2d] text-white px-6 py-3 rounded-full text-sm transition">
           FALE CONOSCO
-        </button>
+        </Link>
 
       </div>
 

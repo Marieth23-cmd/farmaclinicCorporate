@@ -1,6 +1,13 @@
+import Link from "next/link";
 
 
 export default function Solucao() {
+
+const email = "dmt@farmaclinic.net";
+  const subject = "Solicitação de Proposta";
+  const body = "";
+
+
   return (
     <section className="relative w-full overflow-hidden">
       <div
@@ -42,7 +49,9 @@ export default function Solucao() {
                 deslocações e garantindo maior comodidade e eficiência.
               </p>
 
-              <button
+              <Link
+              href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
+                  aria-label="Solicitar Proposta por Email"
                 className="bg-[#44a631] hover:bg-green-600 text-white rounded-full font-medium transition-colors mb-4"
                 style={{
                   fontSize: "clamp(0.9rem, 1vw, 1rem)",
@@ -50,7 +59,7 @@ export default function Solucao() {
                 }}
               >
                 Solicitar Proposta
-              </button>
+              </Link>
             </div>
           </div>
         </div>

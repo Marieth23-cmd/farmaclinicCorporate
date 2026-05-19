@@ -9,6 +9,14 @@ import { AiOutlineClose } from "react-icons/ai";
 import Link from "next/link";
 
 export default function Header() {
+
+const email = "dmt@farmaclinic.net";
+  const subject = "Solicitação de Proposta";
+  const body = "";
+
+
+
+
   const [isOpen, setIsOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -42,6 +50,9 @@ export default function Header() {
   };
 
   return (
+
+    
+
     <header className="fixed top-0 left-0 w-full h-20 bg-white shadow-sm z-50">
       <div className="max-w-6xl mx-auto h-full px-5 flex items-center justify-between">
 
@@ -79,9 +90,12 @@ export default function Header() {
         {/* Desktop Right */}
         <div className="hidden lg:flex items-center gap-4 text-lg text-[#1b73a0]">
 
-          <button className="bg-[#44a631] hover:bg-green-600 text-white px-4 py-2 rounded-full font-medium shadow-lg">
+          <Link 
+           href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
+           aria-label="Solicitar Proposta por Email"
+           className="bg-[#44a631] hover:bg-green-600 text-white px-4 py-2 rounded-full font-medium shadow-lg">
             Solicitar Proposta
-          </button>
+          </Link>
           
           <FaInstagram className="cursor-pointer hover:text-pink-500 text-base lg:text-lg" />
           <GrFacebookOption className="cursor-pointer hover:text-blue-600 text-base lg:text-lg" />
