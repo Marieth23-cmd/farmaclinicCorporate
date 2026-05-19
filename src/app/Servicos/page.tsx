@@ -138,7 +138,7 @@ export default function Servicos() {
           
 
           {/* conteudo da página  3 */}
-           <section className="max-w-6xl mx-auto py-10 px-4 sm:px-6 md:px-8 lg:py-16">
+           <section className="max-w-6xl mx-auto py-10 px-4 sm:px-6 md:px-8 md:py-16 lg:pb-8 lg:py-0">
              <motion.div 
              initial={{ opacity: 0, filter: "blur(2px)" }}
               whileInView={{ opacity: 1, filter: "blur(0px)" }}
@@ -168,8 +168,8 @@ export default function Servicos() {
   
                   <div className="
                     flex flex-col md:flex-row
-                    gap-6 md:gap-24
-                    max-w-6xl mx-auto px-4 py-8
+                    gap-6 md:gap-20
+                    max-w-6xl mx-auto px-6 py-8
                     items-start
                   ">
 
@@ -215,7 +215,8 @@ export default function Servicos() {
                   {/* Título */}
                   <div className="mb-14">
                     <h1 className="text-[#1b73a0] leading-tight mb-[2%] max-w-md"
-                          style={{ fontSize: "clamp(1.8rem, 3vw, 3rem)" }}>
+                    style={{ fontSize: "clamp(1.4rem, 2.5vw, 2.5rem)",}}>
+                
                       Serviços de{" "}
                       <span className="font-bold ">
                         Medicina do Trabalho
@@ -239,10 +240,10 @@ export default function Servicos() {
                               delay: key * 0.2,
                               ease: "easeOut",
                             }}
-                            className="flex bg-white rounded-2xl shadow-sm border border-gray-300"
+                            className="flex flex-col md:flex-row  bg-white rounded-2xl shadow-sm border border-gray-300"
                           >
                     {/* Lado da imagem */}
-                        <div className="relative w-1/3  shrink-0 overflow-visible">
+                       <div className="relative w-full h-56 md:w-1/3 md:h-auto shrink-0 overflow-visible">
                           {/* Imagem */}
                           <div className="relative w-full h-full overflow-hidden rounded-l-xl">
                             <Image
@@ -255,7 +256,7 @@ export default function Servicos() {
 
                           {/* Ícone */}
                           <div
-                            className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 z-20 border-x-4 border-white rounded-full bg-white"
+                            className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 z-20 border-x-8 lg:border-x-4 border-white rounded-full bg-white"
                           >
                             <Image
                               src={index.imageicon}
@@ -297,7 +298,7 @@ export default function Servicos() {
                   
                   
                {/* última secção */}
-<section className="pt-8 md:pt-10 lg:pt-16">
+<section className="pt-10 md:pt-10 lg:pt-16">
   <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
 
     {/* TÍTULO (sempre em cima) */}

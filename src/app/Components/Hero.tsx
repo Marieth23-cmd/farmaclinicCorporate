@@ -21,7 +21,7 @@ export default function Hero() {
           <div className="max-w-6xl mx-auto px-6 py-16 sm:px-4 md:px-8 w-full">
             <motion.h1
               className="text-white leading-tight max-w-xl mb-[2%]"
-              style={{ fontSize: "clamp(0.9rem, 2.6vw, 3rem)" }}
+              style={{ fontSize: "clamp(0.9rem, 2.6vw, 4rem)" }}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
@@ -53,7 +53,7 @@ export default function Hero() {
 
 
               {/* ── Mobile ──GKIFUNSUNI */}
-      <div className="relative w-full md:pt-14  lg:py-16 block md:hidden">
+      <div className="relative w-full   block md:hidden">
         <Image
           src="https://res.cloudinary.com/dhpa1juyr/image/upload/v1778855665/Img_banner_Top_1_mlqpy9.webp"
           alt="Hero"

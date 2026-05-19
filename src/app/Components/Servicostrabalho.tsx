@@ -50,7 +50,9 @@ export default function Servicostrabalho() {
         </span>
       </h1>
 
-      <p className="text-base md:text-lg mt-3 text-gray-600">
+      <p
+      style={{ fontSize: "clamp(1rem, 1.2vw, 1.125rem)" }}
+       className="text-base md:text-lg mt-3 text-gray-600">
         Soluções completas para garantir a saúde, segurança e conformidade
         legal da sua empresa.
       </p>

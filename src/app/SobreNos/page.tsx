@@ -79,7 +79,7 @@ export default function Contactos() {
 
 
 
-        <section className="max-w-6xl mx-auto px-4 sm:px-6 py-8 lg:pb-16 "
+        <section className="max-w-6xl mx-auto px-4 sm:px-6 py-8 md:py-16 lg:pb-16 lg:pt-0 "
             >
         
               <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10">
@@ -139,8 +139,8 @@ export default function Contactos() {
                     src="https://res.cloudinary.com/dhpa1juyr/image/upload/v1777995565/Img_logo_Sobre_nos_seipcl.webp"
                     alt="Saúde ocupacional"
                     fill
-                    className="object-contain"
-                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    className="object-contain hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 1024px) 100vw, 50vw "
                   />
                 </div>
         

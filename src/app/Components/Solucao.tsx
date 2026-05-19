@@ -19,7 +19,7 @@ export default function Solucao() {
             <div className="w-[46%] min-w-[280px] md:w-[75%] lg:w-[80%]">
               <h1
                 className="text-white leading-tight mb-5"
-                style={{ fontSize: "clamp(1.8rem, 3vw, 3rem)" }}
+                style={{ fontSize: "clamp(1.4rem, 2.5vw, 2.5rem)",}}
               >
                 Soluções que
                 <span className="font-bold"> se adaptam à sua empresa</span>

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Servicos() {
   return (
-   <section className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-10 md:py-16 lg:pb-16">
+   <section className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-10 md:py-16 lg:py-0 ">
 
   <div className="grid md:grid-cols-2 gap-8 lg:gap-10 items-center">
 
@@ -22,9 +22,7 @@ export default function Servicos() {
 
       <p
         className="text-gray-600 mb-4 leading-relaxed"
-        style={{
-          fontSize: "clamp(0.95rem, 1vw, 1.05rem)",
-        }}
+       style={{ fontSize: "clamp(1rem, 1.2vw, 1.125rem)" }}
       >
         Investir na saúde ocupacional é proteger os seus
         colaboradores e fortalecer a sua empresa.
@@ -32,9 +30,8 @@ export default function Servicos() {
 
       <p
         className="text-gray-600 leading-relaxed"
-        style={{
-          fontSize: "clamp(0.95rem, 1vw, 1.05rem)",
-        }}
+        style={{ fontSize: "clamp(1rem, 1.2vw, 1.125rem)" }}
+        
       >
         Com o acompanhamento adequado, é possível prevenir
         riscos, melhorar o desempenho das equipas e garantir
