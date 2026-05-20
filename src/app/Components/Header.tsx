@@ -97,9 +97,30 @@ const email = "dmt@farmaclinic.net";
             Solicitar Proposta
           </Link>
           
-          <FaInstagram className="cursor-pointer hover:text-pink-500 text-base lg:text-lg" />
-          <GrFacebookOption className="cursor-pointer hover:text-blue-600 text-base lg:text-lg" />
-          <FaLinkedinIn className="cursor-pointer hover:text-blue-700 text-base lg:text-lg" />
+           <a
+                  href="https://www.instagram.com/farmaclinic.ao/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaInstagram className="cursor-pointer rounded-full hover:text-pink-500" />
+                </a>
+
+                <a
+                  href="https://www.facebook.com/farmaclinicangola"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <GrFacebookOption className="cursor-pointer hover:text-blue-600" />
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/company/farmaclinic-angola/posts/?feedView=all"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                <FaLinkedinIn className="cursor-pointer hover:text-blue-700" />
+              </a>
+             
 
 
         </div>
@@ -177,8 +198,8 @@ const email = "dmt@farmaclinic.net";
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-  <FaLinkedinIn className="cursor-pointer hover:text-blue-700" />
-</a>
+                <FaLinkedinIn className="cursor-pointer hover:text-blue-700" />
+              </a>
              
             </div>
           </div>

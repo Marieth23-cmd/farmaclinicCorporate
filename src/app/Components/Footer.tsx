@@ -24,9 +24,32 @@ export default function Footer() {
 
             <div className="flex gap-3 ml-36 text-white text-base lg:text-lg">
              
-              <FaInstagram className="cursor-pointer  hover:text-pink-500 transition" />
-              <GrFacebookOption className="cursor-pointer hover:text-blue-500 transition" />
-              <FaLinkedinIn className="cursor-pointer hover:text-blue-400 transition" />
+
+              <a
+                  href="https://www.instagram.com/farmaclinic.ao/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaInstagram className="cursor-pointer rounded-full hover:text-pink-500" />
+                </a>
+
+                <a
+                  href="https://www.facebook.com/farmaclinicangola"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <GrFacebookOption className="cursor-pointer hover:text-blue-600" />
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/company/farmaclinic-angola/posts/?feedView=all"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                <FaLinkedinIn className="cursor-pointer hover:text-blue-700" />
+              </a>
+             
+             
             </div>
           </div>
 
