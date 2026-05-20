@@ -47,7 +47,7 @@ export default function Contactos() {
 
 
       {/* ── Mobile ──GKIFUNSUNI */}
-            <div className="relative w-full block lg:hidden pt-20">
+            <div className="relative w-full block lg:hidden mt-20">
               <Image
                 src="https://res.cloudinary.com/dhpa1juyr/image/upload/v1778855663/Img_banner_Sobre-nos_ynsqbc.webp"
                 alt="Hero"

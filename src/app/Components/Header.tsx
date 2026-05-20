@@ -149,17 +149,37 @@ const email = "dmt@farmaclinic.net";
             <Link 
              href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
            aria-label="Solicitar Proposta por Email"
-            className="w-full bg-[#44a631] hover:bg-[#3d8f2d] text-white py-2 
-            rounded-full text-sm mb-5  transition-transform  duration-500 hover:scale-110">
+            className="inline-block w-full bg-[#44a631] hover:bg-[#3d8f2d] text-white py-3 text-center
+            rounded-full text-sm mb-1  transition-transform  duration-500 hover:scale-110">
               Solicitar Proposta
             </Link>
           </div>
 
             <div className="flex justify-center gap-4 text-xl text-[#1b73a0]">
+              <a
+                  href="https://www.instagram.com/farmaclinic.ao/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaInstagram className="cursor-pointer rounded-full hover:text-pink-500" />
+                </a>
+
+                <a
+                  href="https://www.facebook.com/farmaclinicangola"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <GrFacebookOption className="cursor-pointer hover:text-blue-600" />
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/company/farmaclinic-angola/posts/?feedView=all"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+  <FaLinkedinIn className="cursor-pointer hover:text-blue-700" />
+</a>
              
-              <FaInstagram className="cursor-pointer hover:text-pink-500" />
-              <GrFacebookOption className="cursor-pointer hover:text-blue-600" />
-              <FaLinkedinIn className="cursor-pointer hover:text-blue-700" />
             </div>
           </div>
         </aside>
