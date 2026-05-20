@@ -332,13 +332,13 @@ export default function Servicos() {
       </div>
 
       {/* COLUNA DIREITA */}
-      <div className="space-y-6" style={{ fontSize: "clamp(1rem, 1.2vw, 1.125rem)" }}>
+      <div className="space-y-6 " style={{ fontSize: "clamp(1rem, 1.2vw, 1.125rem)" }}>
 
         <p className="font-bold text-[#1b73a0]">
           Garanta a conformidade e o bem estar da sua equipa
         </p>
 
-        <p className="text-gray-600">
+        <p className="text-gray-600 mb-6">
           Entre em contacto com a nossa equipa e descubra soluções de saúde ocupacional
           ajustadas às necessidades da sua empresa
         </p>
@@ -346,7 +346,7 @@ export default function Servicos() {
         <Link
         href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
         aria-label="Solicitar Proposta por Email"
-        className="bg-[#44a631] hover:bg-[#3d8f2d] text-white px-6 py-3 rounded-full text-sm transition">
+        className="inline-block bg-[#44a631] hover:bg-[#3d8f2d] mt-8 text-white px-6 py-3 rounded-full text-sm transition">
           FALE CONOSCO
         </Link>
 
