@@ -1,5 +1,5 @@
 "use client";
-
+import {usePathname} from "next/navigation";
 import Image from "next/image";
 import { FaInstagram } from "react-icons/fa";
 import { GrFacebookOption } from "react-icons/gr";
@@ -10,13 +10,15 @@ import Link from "next/link";
 
 export default function Header() {
 
-const email = "dmt@farmaclinic.net";
+  const email = "dmt@farmaclinic.net";
   const subject = "Solicitação de Proposta";
   const body = "";
 
+  
+  const pathname = usePathname();
+  const isActive = (href: string) => pathname === href;
 
-
-
+      
   const [isOpen, setIsOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -78,14 +80,71 @@ const email = "dmt@farmaclinic.net";
         </div>
 
         {/* Menu Desktop  enviando commit novamente */}
-        <nav className="hidden lg:block">
-          <ul className="flex items-center gap-6 text-base lg:text-lg ">
-            <Link href="/" className="cursor-pointer hover:text-[#1b73a0] transition">Início</Link>
-            <Link href="/SobreNos" className="cursor-pointer hover:text-[#1b73a0] transition">Sobre Nós</Link>
-            <Link href="/Servicos" className="cursor-pointer hover:text-[#1b73a0] transition">Serviços</Link>
-            <Link href="/Contactos" className="cursor-pointer hover:text-[#1b73a0] transition">Contactos</Link>
-          </ul>
-        </nav>
+       <nav className="hidden lg:block">
+              <ul className="flex items-center gap-8 text-base lg:text-lg font-medium">
+
+                <Link
+                  href="/"
+                  className={`relative py-2 transition-colors  ${
+                    isActive("/")
+                      ? "text-[#1b73a0]"
+                      : "text-gray-700 hover:text-[#1b73a0]"
+                  }`}
+                >
+                  Início
+
+                  {isActive("/") && (
+                    <span className="absolute left-0 -bottom-1 w-full h-[2px] bg-[#1b73a0] rounded-full"></span>
+                  )}
+                </Link>
+
+                <Link
+                  href="/SobreNos"
+                  className={`relative py-2 transition-colors ${
+                    isActive("/SobreNos")
+                      ? "text-[#1b73a0]"
+                      : "text-gray-700 hover:text-[#1b73a0]"
+                  }`}
+                >
+                  Sobre Nós
+
+                  {isActive("/SobreNos") && (
+                    <span className="absolute left-0 -bottom-1 w-full h-[2px] bg-[#1b73a0] rounded-full"></span>
+                  )}
+                </Link>
+
+                <Link
+                  href="/Servicos"
+                  className={`relative py-2 transition-colors ${
+                    isActive("/Servicos")
+                      ? "text-[#1b73a0]"
+                      : "text-gray-700 hover:text-[#1b73a0]"
+                  }`}
+                >
+                  Serviços
+
+                  {isActive("/Servicos") && (
+                    <span className="absolute left-0 -bottom-1 w-full h-[2px] bg-[#1b73a0] rounded-full"></span>
+                  )}
+                </Link>
+
+                <Link
+                  href="/Contactos"
+                  className={`relative py-2 transition-colors ${
+                    isActive("/Contactos")
+                      ? "text-[#1b73a0]"
+                      : "text-gray-700 hover:text-[#1b73a0]"
+                  }`}
+                >
+                  Contactos
+
+                  {isActive("/Contactos") && (
+                    <span className="absolute left-0 -bottom-1 w-full h-[2px] bg-[#1b73a0] rounded-full"></span>
+                  )}
+                </Link>
+
+              </ul>
+            </nav>
 
         {/* Desktop Right */}
         <div className="hidden lg:flex items-center gap-4 text-lg text-[#1b73a0]">

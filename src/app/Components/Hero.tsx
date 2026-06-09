@@ -34,8 +34,8 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              Cuidar da saúde dos seus colaboradores
-              <span className="font-bold"> é investimento no sucesso da sua empresa</span>
+              Cuidar da saúde dos seus colaboradores 
+              <span className="font-bold"> é investir no sucesso da sua empresa</span>
             </motion.h1>
             <motion.p
               className="text-gray-200 mb-[3%] leading-relaxed max-w-xl"
