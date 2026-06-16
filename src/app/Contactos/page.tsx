@@ -8,6 +8,11 @@ import { motion } from "framer-motion";
 
 
 export default function Contactos() {
+const phone = "244941326479";
+const message = "Olá, gostaria de obter mais informações.";
+const email = "dmt.farmaclinic.net";
+const subject = "Solicitação de Proposta";
+
   return (
     <div >
         <Header />
@@ -120,7 +125,9 @@ export default function Contactos() {
           style={{ fontSize: "clamp(1rem, 1.2vw, 1.125rem)" }}
         >
           <span className="font-bold">Email:</span>
-          <span>dmt@farmaclinic.net</span>
+          <a className="cursor-pointer" href={`mailto:${email}?subject=${encodeURIComponent(subject)}`} target="_blank" rel="noopener noreferrer">
+            dmt@farmaclinic.net
+          </a>
         </p>
 
       </div>
@@ -135,12 +142,12 @@ export default function Contactos() {
           FALE CONOSCO
         </p>
 
-        <span
+        <a href={`https://wa.me/${phone}?text=${encodeURIComponent(message)}`} target="_blank" rel="noopener noreferrer"
           className="text-[#44a631] mt-1"
           style={{ fontSize: "clamp(1rem, 1.1vw, 1.125rem)" }}
         >
           +244 947 885 316
-        </span>
+        </a>
       </div>
     </div>
 
@@ -193,14 +200,13 @@ export default function Contactos() {
     {/* Mapa */}
     <div className="lg:w-1/2 w-full min-h-[300px] sm:min-h-[350px] md:min-h-[250px]">
      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6!2d13.2341!3d-8.8368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f15b4b4b4b4b%3A0x0!2sFarmaclinic%20Centro%20M%C3%A9dico%2C%20Rua%2011%20de%20Novembro%2C%20Luanda!5e0!3m2!1spt!2sao!4v1700000000000"
-        className="w-full h-full rounded-lg"
-       
-        style={{ minHeight: "200px", border: 0 }}
-        allowFullScreen
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-      />
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.567756791385!2d13.363646176069674!3d-8.919713691586741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f823b9724561%3A0x6f5d0146fdfae64c!2sFARMACLINIC!5e0!3m2!1spt-PT!2sus!4v1781606143307!5m2!1spt-PT!2sus"
+      className="w-full h-full rounded-lg"
+      style={{ border: 0, minHeight: "300px" }}
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+/>
     </div>
 
   </div>

@@ -6,6 +6,13 @@ import { MdAlternateEmail } from "react-icons/md";
 import Link from "next/link";
 
 export default function Footer() {
+  const phone="244941326479";
+  const message="Olá, gostaria de obter mais informações.";
+  const email = "dmt.farmaclinic.net";
+  const subject = "Solicitação de Proposta";
+
+
+
   return (
     <footer className="bg-[#004662] text-white">
       <div className="max-w-6xl mx-auto px-4 lg:px-4 md:px-8 py-10 lg:py-10">
@@ -69,20 +76,24 @@ export default function Footer() {
                 </span>
               </li>
 
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 cursor-pointer">
                 <FaWhatsapp
                   className="p-1 bg-[#1b73a0] rounded-full shrink-0"
                   size={24}
                 />
-                <span>+244 941 326 479</span>
+                <a href={`https://wa.me/${phone}?text=${encodeURIComponent(message)}`} target="_blank" rel="noopener noreferrer">
+                  +244 941 326 479
+                </a>
               </li>
 
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 cursor-pointer">
                 <MdAlternateEmail
                   className="p-1 bg-[#0a68a7d8] rounded-full shrink-0"
                   size={24}
                 />
-                <span>dmt@farmaclinic.net</span>
+                <a href={`mailto:${email}?subject=${encodeURIComponent(subject)}`} target="_blank" rel="noopener noreferrer">
+                  dmt@farmaclinic.net
+                </a>
               </li>
             </ul>
           </div>
