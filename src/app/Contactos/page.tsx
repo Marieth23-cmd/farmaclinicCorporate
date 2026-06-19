@@ -146,7 +146,7 @@ const subject = "Solicitação de Proposta";
           className="text-[#44a631] mt-1"
           style={{ fontSize: "clamp(1rem, 1.1vw, 1.125rem)" }}
         >
-          +244 947 885 316
+          +244 941 326 479
         </a>
       </div>
     </div>
@@ -158,7 +158,7 @@ const subject = "Solicitação de Proposta";
 
        
 
-       <section className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8  md:pb-16">
+       <section className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 pb-8 md:pb-16">
   <div className="flex flex-col lg:flex-row gap-8 items-stretch">
 
     {/* Texto */}
