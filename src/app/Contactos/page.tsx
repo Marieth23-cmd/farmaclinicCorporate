@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 
 export default function Contactos() {
-const phone = "244941326479";
+const phone= "244941326479";
 const message = "Olá, gostaria de obter mais informações.";
 const email = "enfermagem@farmaclinic.net";
 const subject = "Solicitação de Proposta";
@@ -115,8 +115,8 @@ const subject = "Solicitação de Proposta";
         >
           <span className="font-bold">Telefones:</span>
           <span className="flex flex-col">
-            <span>+244 947 885 316</span>
-            <span>+244 912 907 048</span>
+            <span> +244 941 326 479 </span>
+            <span> +244 928 976 363 </span>
           </span>
         </p>
 

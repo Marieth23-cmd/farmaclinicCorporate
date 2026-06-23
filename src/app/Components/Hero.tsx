@@ -49,7 +49,7 @@ export default function Hero() {
             <Link  href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
                   aria-label="Solicitar Proposta por Email"
 
-              className="bg-[#44a631] hover:bg-[#3d8f2d] text-white rounded-full font-medium transition-colors"
+              className="bg-[#44a631]  hover:bg-[#3d8f2d] text-white rounded-full font-medium transition-colors"
               style={{
                 fontSize: "clamp(0.5rem, 0.9vw, 1rem)",
                 padding: "1% 4%",
@@ -109,6 +109,7 @@ export default function Hero() {
               py-3
               text-sm
               sm:text-base
+            
               "
               
             >

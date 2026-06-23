@@ -152,7 +152,7 @@ export default function Header() {
           <Link 
            href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
            aria-label="Solicitar Proposta por Email"
-           className="bg-[#44a631] hover:bg-green-600 text-white px-4 py-2 rounded-full font-medium shadow-lg">
+           className="bg-[#44a631] hover:bg-green-600  text-white px-4 py-2 rounded-full font-medium shadow-lg">
             Solicitar Proposta
           </Link>
           
