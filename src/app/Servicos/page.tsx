@@ -60,7 +60,7 @@ export default function Servicos() {
 
 
 
-    const email = "dmt@farmaclinic.net";
+    const email = "enfermagem@farmaclinic.net";
   const subject = "Solicitação de Proposta";
   const body = "";
 

@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Footer() {
   const phone="244941326479";
   const message="Olá, gostaria de obter mais informações.";
-  const email = "dmt.farmaclinic.net";
+  const email = "enfermagem@farmaclinic.net";
   const subject = "Solicitação de Proposta";
 
 
@@ -92,7 +92,7 @@ export default function Footer() {
                   size={24}
                 />
                 <a href={`mailto:${email}?subject=${encodeURIComponent(subject)}`} target="_blank" rel="noopener noreferrer">
-                  dmt@farmaclinic.net
+                  enfermagem@farmaclinic.net
                 </a>
               </li>
             </ul>

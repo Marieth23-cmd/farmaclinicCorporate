@@ -6,7 +6,7 @@ import Link from "next/link"
 
 export default function Hero() {
 
-   const email = "dmt@farmaclinic.net";
+   const email = "enfermagem@farmaclinic.net";
   const subject = "Solicitação de Proposta";
   const body = "";
 

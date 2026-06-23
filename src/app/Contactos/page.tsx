@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 export default function Contactos() {
 const phone = "244941326479";
 const message = "Olá, gostaria de obter mais informações.";
-const email = "dmt.farmaclinic.net";
+const email = "enfermagem@farmaclinic.net";
 const subject = "Solicitação de Proposta";
 
   return (

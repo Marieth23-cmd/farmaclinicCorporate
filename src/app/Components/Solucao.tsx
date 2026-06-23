@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Solucao() {
 
-const email = "dmt@farmaclinic.net";
+const email = "enfermagem@farmaclinic.net";
   const subject = "Solicitação de Proposta";
   const body = "";
 
@@ -113,14 +113,16 @@ const email = "dmt@farmaclinic.net";
           deslocações e garantindo maior comodidade e eficiência.
         </p>
 
-        <button
+        <a 
+          href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
+          aria-label="Solicitar Proposta por Email"
           className="bg-[#44a631] hover:bg-green-600 text-white rounded-full font-medium transition-colors px-6 py-3"
           style={{
             fontSize: "clamp(0.95rem, 1vw, 1rem)",
           }}
         >
           Solicitar Proposta
-        </button>
+        </a>
 
       </div>
     </div>
