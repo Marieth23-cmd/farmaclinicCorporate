@@ -67,7 +67,7 @@ export default function Footer() {
             <h3 className="font-bold text-base lg:text-lg mb-4">Áreas de Actuação</h3>
             <ul className="space-y-3 text-sm lg:text-base flex flex-col">
               <li>
-                <a href="/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+                <a href="https://corporate.farmaclinic.ao/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
                   Medicina do Trabalho
                 </a>
               </li>
@@ -91,7 +91,7 @@ export default function Footer() {
 
           {/* Menu */}
           <div>
-            <h3 className="font-bold text-base lg:text-lg mb-4">Menu</h3>
+            <h3 className="font-bold text-baselg:text-lg mb-4">Menu</h3>
 
             <ul className="space-y-3 text-sm lg:text-base flex flex-col ">
               <Link href="/" className="hover:text-gray-300 cursor-pointer">
@@ -109,7 +109,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contacto */}
+          {/* Contactos */}
           <div>
             <h3 className="font-bold text-base lg:text-lg mb-4">Contacto</h3>
 
