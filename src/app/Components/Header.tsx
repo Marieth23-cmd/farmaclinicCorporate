@@ -10,9 +10,9 @@ import Link from "next/link";
 
 export default function Header() {
 
-  const email = "enfermagem@farmaclinic.net";
-  const subject = "Solicitação de Proposta";
-  const body = "";
+  const phone = "244941326479";
+  const message = "Olá, gostaria de solicitar uma proposta.";
+  const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
   
   const pathname = usePathname();
@@ -149,12 +149,14 @@ export default function Header() {
         {/* Desktop Right */}
         <div className="hidden lg:flex items-center gap-4 text-lg text-[#1b73a0]">
 
-          <Link 
-           href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
-           aria-label="Solicitar Proposta por Email"
+          <a
+           href={whatsappUrl}
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Solicitar Proposta pelo WhatsApp"
            className="bg-[#44a631] hover:bg-green-600  text-white px-4 py-2 rounded-full font-medium shadow-lg">
             Solicitar Proposta
-          </Link>
+          </a>
           
            <a
                   href="https://www.instagram.com/farmaclinic.ao/"
@@ -226,13 +228,15 @@ export default function Header() {
           {/* Bottom */}
           <div className="mt-auto px-6 pb-8">
             <div className="mt-auto px-6 pb-8">
-            <Link 
-             href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
-           aria-label="Solicitar Proposta por Email"
+            <a
+             href={whatsappUrl}
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Solicitar Proposta pelo WhatsApp"
             className="inline-block w-full bg-[#44a631] hover:bg-[#3d8f2d] text-white py-3 text-center
             rounded-full text-sm mb-1  transition-transform  duration-500 hover:scale-110">
               Solicitar Proposta
-            </Link>
+            </a>
           </div>
 
             <div className="flex justify-center gap-4 text-xl text-[#1b73a0]">

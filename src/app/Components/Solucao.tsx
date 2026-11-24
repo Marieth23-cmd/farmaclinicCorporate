@@ -1,11 +1,9 @@
-import Link from "next/link";
-
 
 export default function Solucao() {
 
-const email = "enfermagem@farmaclinic.net";
-  const subject="Solicitação de Proposta";
-  const body = "";
+  const phone = "244941326479";
+  const message = "Olá, gostaria de solicitar uma proposta.";
+  const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
 
   return (
@@ -49,9 +47,11 @@ const email = "enfermagem@farmaclinic.net";
                 deslocações e garantindo maior comodidade e eficiência.
               </p>
 
-              <Link
-              href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
-                  aria-label="Solicitar Proposta por Email"
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Solicitar Proposta pelo WhatsApp"
                 className="bg-[#44a631] hover:bg-green-600 text-white rounded-full font-medium transition-colors mb-4"
                 style={{
                   fontSize: "clamp(0.9rem, 1vw, 1rem)",
@@ -59,7 +59,7 @@ const email = "enfermagem@farmaclinic.net";
                 }}
               >
                 Solicitar Proposta
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -114,6 +114,10 @@ const email = "enfermagem@farmaclinic.net";
         </p>
 
         <a
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Solicitar Proposta pelo WhatsApp"
           className="bg-[#44a631] hover:bg-green-600 text-white rounded-full font-medium transition-colors px-6 py-3"
           style={{
             fontSize: "clamp(0.95rem, 1vw, 1rem)",

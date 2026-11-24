@@ -4,7 +4,6 @@ import Header from "../Components/Header";
 import Image from "next/image";
 import Wpp from "../Components/Wpp"
 import {motion} from "framer-motion"
-import Link from "next/link";
 
 
 export default function Servicos() {
@@ -60,9 +59,8 @@ export default function Servicos() {
 
 
 
-    const email = "enfermagem@farmaclinic.net";
-  const subject = "Solicitação de Proposta";
-  const body = "";
+  const phone = "244941326479";
+  const message = "Olá, gostaria de solicitar uma proposta.";
 
 
   return (
@@ -343,12 +341,14 @@ export default function Servicos() {
           ajustadas às necessidades da sua empresa
         </p>
 
-        <Link
-        href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
-        aria-label="Solicitar Proposta por Email"
+        <a
+        href={`https://wa.me/${phone}?text=${encodeURIComponent(message)}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Fale connosco pelo WhatsApp"
         className="inline-block bg-[#44a631] hover:bg-[#3d8f2d] mt-8 text-white px-6 py-3 rounded-full text-sm transition">
           FALE CONOSCO
-        </Link>
+        </a>
 
       </div>
 

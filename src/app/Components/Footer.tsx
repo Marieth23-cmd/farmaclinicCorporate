@@ -17,17 +17,19 @@ export default function Footer() {
     <footer className="bg-[#004662] text-white">
       <div className="max-w-6xl mx-auto px-4 lg:px-4 md:px-8 py-10 lg:py-10">
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 py-8 md:py-10 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 py-8 md:py-10 items-start">
 
           {/* Logo */}
           <div className="space-y-6">
-            <Image
-              src="https://res.cloudinary.com/dhpa1juyr/image/upload/v1776868935/Logo_branco_cd3dhn.png"
-              alt="Logo"
-              width={220}
-              height={140}
-              className="object-contain"
-            />
+            <a href="https://farmaclinic.ao/" aria-label="Visitar o site da Farmaclinic">
+              <Image
+                src="https://res.cloudinary.com/dhpa1juyr/image/upload/v1776868935/Logo_branco_cd3dhn.png"
+                alt="Logo Farmaclinic"
+                width={220}
+                height={140}
+                className="object-contain"
+              />
+            </a>
 
             <div className="flex gap-3 ml-36 text-white text-base lg:text-lg">
              
@@ -60,7 +62,54 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Contactos */}
+          {/* Áreas de Actuação */}
+          <div>
+            <h3 className="font-bold text-base lg:text-lg mb-4">Áreas de Actuação</h3>
+            <ul className="space-y-3 text-sm lg:text-base flex flex-col">
+              <li>
+                <a href="/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+                  Medicina do Trabalho
+                </a>
+              </li>
+              <li>
+                <a href="https://centromedico.farmaclinic.ao/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+                  Farmaclinic Centro Médico
+                </a>
+              </li>
+              <li>
+                <a href="https://fisioterapia.farmaclinic.ao/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+                  Fisioterapia
+                </a>
+              </li>
+              <li>
+                <a href="https://farmacia.farmaclinic.ao/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+                  Farmácia
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Menu */}
+          <div>
+            <h3 className="font-bold text-base lg:text-lg mb-4">Menu</h3>
+
+            <ul className="space-y-3 text-sm lg:text-base flex flex-col ">
+              <Link href="/" className="hover:text-gray-300 cursor-pointer">
+                Início
+              </Link>
+              <Link href="/SobreNos" className="hover:text-gray-300 cursor-pointer">
+                Sobre Nós
+              </Link>
+              <Link href="/Servicos" className="hover:text-gray-300 cursor-pointer">
+                Serviços
+              </Link>
+              <Link href="/Contactos" className="hover:text-gray-300 cursor-pointer">
+                Contactos
+              </Link>
+            </ul>
+          </div>
+
+          {/* Contacto */}
           <div>
             <h3 className="font-bold text-base lg:text-lg mb-4">Contacto</h3>
 
@@ -81,9 +130,14 @@ export default function Footer() {
                   className="p-1 bg-[#1b73a0] rounded-full shrink-0"
                   size={24}
                 />
-                <a href={`https://wa.me/${phone}?text=${encodeURIComponent(message)}`} target="_blank" rel="noopener noreferrer">
-                  +244 941 326 479
-                </a>
+                <div className="flex flex-col items-start">
+                  <a href={`https://wa.me/${phone}?text=${encodeURIComponent(message)}`} target="_blank" rel="noopener noreferrer">
+                    +244 941 326 479
+                  </a>
+                  <a href="tel:+244923167040">
+                    +244 923 167 040
+                  </a>
+                </div>
               </li>
 
               <li className="flex items-center gap-2 cursor-pointer">
@@ -95,26 +149,6 @@ export default function Footer() {
                   enfermagem@farmaclinic.net
                 </a>
               </li>
-            </ul>
-          </div>
-
-          {/* Menu */}
-          <div>
-            <h3 className="font-bold text-baselg:text-lg mb-4">Menu</h3>
-
-            <ul className="space-y-3 text-sm lg:text-base flex flex-col ">
-              <Link href="/" className="hover:text-gray-300 cursor-pointer">
-                Início
-              </Link>
-              <Link href="/SobreNos" className="hover:text-gray-300 cursor-pointer">
-                Sobre Nós
-              </Link>
-              <Link href="/Servicos" className="hover:text-gray-300 cursor-pointer">
-                Serviços
-              </Link>
-              <Link href="/Contactos" className="hover:text-gray-300 cursor-pointer">
-                Contactos
-              </Link>
             </ul>
           </div>
 

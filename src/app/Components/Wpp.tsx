@@ -6,7 +6,7 @@ export default function WhatsAppFloat() {
   const phone = "244941326479";
   const message = "Olá, gostaria de obter mais informações.";
 
-  return (
+  return (  
     <a
       href={`https://wa.me/${phone}?text=${encodeURIComponent(message)}`}
       target="_blank"

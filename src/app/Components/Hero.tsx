@@ -2,13 +2,12 @@
 import Image from "next/image";
 import {motion} from "framer-motion";
 
-import Link from "next/link"
 
 export default function Hero() {
 
-   const email = "enfermagem@farmaclinic.net";
-  const subject = "Solicitação de Proposta";
-  const body = "";
+  const phone = "244941326479";
+  const message = "Olá, gostaria de solicitar uma proposta.";
+  const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
 
   return (
@@ -46,9 +45,11 @@ export default function Hero() {
             >
               Medicina Ocupacional com rigor, proximidade e soluções adaptadas à sua organização
             </motion.p>
-            <Link  href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
-                  aria-label="Solicitar Proposta por Email"
-
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Solicitar Proposta pelo WhatsApp"
               className="bg-[#44a631]  hover:bg-[#3d8f2d] text-white rounded-full font-medium transition-colors"
               style={{
                 fontSize: "clamp(0.5rem, 0.9vw, 1rem)",
@@ -56,7 +57,7 @@ export default function Hero() {
               }}
             >
               Solicitar Proposta
-            </Link>
+            </a>
           </div>
         </div>
       </div>
@@ -94,10 +95,11 @@ export default function Hero() {
             >
               Medicina Ocupacional com rigor, proximidade e soluções adaptadas à sua organização
             </motion.p>
-            <Link
-             href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
-              aria-label="Solicitar Proposta por Email"
-
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Solicitar Proposta pelo WhatsApp"
               className="
               bg-[#44a631]
               hover:bg-green-600
@@ -114,7 +116,7 @@ export default function Hero() {
               
             >
               Solicitar Proposta
-            </Link>
+            </a>
           </div>
         </div>
       </div>
