@@ -177,7 +177,7 @@ const subject = "Solicitação de Proposta";
         {/* Endereço */}
         <div className="max-w-72 md:max-w-none">
           <p className="font-bold text-base sm:text-lg">
-            Farmaclinic - Centro Médico
+            Farmaclinic - Medicina do Trabalho
           </p>
           <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
             Rua 11 de Novembro, S/N BAIRRO 1º Viana, Luanda - Angola
